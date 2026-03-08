@@ -1,3 +1,7 @@
+/* ===============================
+   GLOBAL SETTINGS
+================================ */
+
 * {
   box-sizing: border-box;
 }
@@ -10,224 +14,338 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   color: #f5f1e8;
+
   background:
-    linear-gradient(rgba(8, 8, 8, 0.78), rgba(8, 8, 8, 0.90)),
-    url("../images/topo-bg.png") center center / cover no-repeat fixed;
+    linear-gradient(rgba(8,8,8,0.80), rgba(8,8,8,0.92)),
+    url("../images/topo-bg.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
-a {
-  color: inherit;
-}
+/* ===============================
+   LAYOUT
+================================ */
 
 .container {
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 24px;
+  margin: auto;
+  padding: 25px;
 }
 
-header.site-header {
+/* ===============================
+   HEADER
+================================ */
+
+.site-header {
   text-align: center;
-  padding: 40px 20px 24px;
+  padding: 40px 20px 20px 20px;
 }
+
+/* Logo */
+
+.logo-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.site-logo {
+  width: 120px;
+  height: auto;
+  filter: drop-shadow(0 5px 10px rgba(0,0,0,0.6));
+}
+
+/* Title */
 
 .brand {
-  font-size: 2.6rem;
-  margin: 0;
+  font-size: 2.5rem;
+  margin: 10px 0;
   letter-spacing: 1px;
 }
 
+/* Tagline */
+
 .tagline {
-  max-width: 760px;
-  margin: 12px auto 0;
+  max-width: 700px;
+  margin: auto;
   color: #ddd5c7;
-  line-height: 1.6;
-  font-size: 1rem;
+  line-height: 1.5;
 }
 
+/* ===============================
+   NAVIGATION
+================================ */
+
 .top-nav {
+  margin-top: 20px;
+
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 12px;
-  margin-top: 24px;
 }
 
 .top-nav a {
+
   text-decoration: none;
-  padding: 11px 16px;
+
+  padding: 10px 18px;
+
   border-radius: 10px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  color: #fff;
+
+  background: rgba(255,255,255,0.08);
+
+  border: 1px solid rgba(255,255,255,0.15);
+
+  color: white;
+
   font-weight: bold;
-  transition: transform 0.2s ease, background 0.2s ease;
+
+  transition: all 0.2s ease;
 }
 
 .top-nav a:hover {
+
+  background: rgba(255,255,255,0.18);
+
   transform: translateY(-1px);
-  background: rgba(255, 255, 255, 0.12);
 }
 
+/* ===============================
+   SEARCH BAR
+================================ */
+
 .search-wrap {
-  max-width: 600px;
-  margin: 26px auto 0;
+  margin: 25px auto;
+  max-width: 550px;
 }
 
 .search-input {
+
   width: 100%;
-  padding: 14px 16px;
+
+  padding: 14px;
+
   border-radius: 12px;
-  border: 1px solid rgba(255,255,255,0.15);
-  background: rgba(255,255,255,0.09);
-  color: #fff;
-  font-size: 1rem;
+
+  border: 1px solid rgba(255,255,255,0.18);
+
+  background: rgba(255,255,255,0.10);
+
+  color: white;
+
+  font-size: 15px;
+
   outline: none;
 }
 
 .search-input::placeholder {
-  color: #d7d7d7;
+  color: #d2d2d2;
 }
+
+/* ===============================
+   GRID LAYOUT
+================================ */
 
 .hero-grid,
 .card-grid {
+
   display: grid;
+
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+
   gap: 20px;
 }
 
 .hero-grid {
-  margin-top: 34px;
+  margin-top: 30px;
 }
 
+/* ===============================
+   CARDS
+================================ */
+
 .card {
+
   background: rgba(255,255,255,0.08);
-  border: 1px solid rgba(255,255,255,0.13);
-  border-radius: 18px;
-  padding: 22px;
-  box-shadow: 0 10px 22px rgba(0,0,0,0.25);
+
+  border: 1px solid rgba(255,255,255,0.15);
+
+  border-radius: 15px;
+
+  padding: 20px;
+
   backdrop-filter: blur(4px);
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.35);
 }
 
 .card h2,
 .card h3 {
   margin-top: 0;
-  color: #fff6df;
 }
 
 .card p {
-  color: #e2ddd3;
-  line-height: 1.6;
+  color: #ddd;
+  line-height: 1.5;
 }
 
-.section-title {
-  margin: 42px 0 18px;
-  font-size: 1.7rem;
-  color: #fff6df;
-}
+/* ===============================
+   PRODUCT CARDS
+================================ */
 
-.product-card img,
-.feature-img {
+.product-card img {
+
   width: 100%;
-  height: 190px;
+
+  height: 170px;
+
   object-fit: cover;
-  border-radius: 12px;
-  margin-bottom: 14px;
-  background: rgba(255,255,255,0.08);
+
+  border-radius: 10px;
+
+  margin-bottom: 12px;
+
+  background: rgba(255,255,255,0.05);
 }
+
+/* ===============================
+   BUTTONS
+================================ */
 
 .button-row {
+
   display: flex;
+
+  gap: 8px;
+
   flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 14px;
+
+  margin-top: 12px;
 }
 
 .btn {
-  display: inline-block;
+
+  padding: 8px 14px;
+
+  border-radius: 8px;
+
   text-decoration: none;
-  padding: 10px 15px;
-  border-radius: 10px;
+
   font-weight: bold;
-  transition: transform 0.2s ease, opacity 0.2s ease;
+
+  font-size: 14px;
+
+  transition: all .15s ease;
 }
 
 .btn:hover {
+
   transform: translateY(-1px);
-  opacity: 0.95;
+
+  opacity: 0.9;
 }
+
+/* Etsy */
 
 .btn-etsy {
   background: #f1641e;
-  color: #fff;
+  color: white;
 }
+
+/* Manuals */
+
+.btn-manual {
+  background: #444;
+  color: white;
+}
+
+/* Parts */
 
 .btn-parts {
   background: #2d6a4f;
-  color: #fff;
+  color: white;
 }
 
-.btn-manual {
-  background: #4b4b4b;
-  color: #fff;
-}
+/* Main page buttons */
 
 .btn-home {
   background: #7b5e3b;
-  color: #fff;
+  color: white;
 }
 
-.small-note {
-  color: #cfc7ba;
-  font-size: 0.95rem;
+/* ===============================
+   SECTION TITLES
+================================ */
+
+.section-title {
+
+  font-size: 1.6rem;
+
+  margin: 40px 0 15px 0;
 }
+
+/* ===============================
+   MANUAL LIST
+================================ */
+
+.manual-list {
+  display: grid;
+  gap: 15px;
+}
+
+.manual-item {
+
+  background: rgba(255,255,255,0.08);
+
+  border-radius: 12px;
+
+  padding: 16px;
+
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+/* ===============================
+   FOOTER
+================================ */
 
 footer {
+
   text-align: center;
-  color: #d2cabd;
-  padding: 42px 20px 54px;
-  font-size: 0.95rem;
+
+  padding: 40px 20px;
+
+  color: #d6d6d6;
+
+  font-size: 14px;
 }
+
+/* ===============================
+   SEARCH FILTER
+================================ */
 
 .hidden-card {
   display: none !important;
 }
 
-.page-intro {
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto 26px;
-  color: #ddd5c7;
-  line-height: 1.6;
-}
+/* ===============================
+   MOBILE
+================================ */
 
-.manual-list {
-  display: grid;
-  gap: 16px;
-}
+@media (max-width: 700px) {
 
-.manual-item {
-  background: rgba(255,255,255,0.08);
-  border: 1px solid rgba(255,255,255,0.13);
-  border-radius: 16px;
-  padding: 18px;
-}
-
-.manual-item h3 {
-  margin-top: 0;
-  margin-bottom: 8px;
-}
-
-@media (max-width: 640px) {
   .brand {
     font-size: 2rem;
+  }
+
+  .product-card img {
+    height: 150px;
   }
 
   .container {
     padding: 18px;
   }
 
-  .product-card img,
-  .feature-img {
-    height: 170px;
-  }
 }
