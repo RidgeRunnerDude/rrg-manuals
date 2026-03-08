@@ -8,13 +8,14 @@
 </head>
 <body>
   <div class="container">
-<header class="site-header">
-  <div class="logo-wrap">
-    <img src="../assets/images/rrg_logo.png" alt="Ridge Runner Gear logo" class="site-logo" />
-  </div>
-  <h1 class="brand">RRG Products</h1>
+    <header class="site-header">
+      <div class="logo-wrap">
+        <img src="../assets/images/rrg_logo.png" alt="Ridge Runner Gear logo" class="site-logo" />
+      </div>
+      <h1 class="brand">Products</h1>
+
       <p class="page-intro">
-        Complete Ridge Runner Gear products with quick access to manuals and direct Etsy purchase links.
+        Browse current Ridge Runner Gear products with direct manual, parts, and Etsy links.
       </p>
 
       <nav class="top-nav">
@@ -35,45 +36,47 @@
       </div>
     </header>
 
-    <section class="card-grid">
-      <div class="card product-card" data-search="rocket reel hand line fishing reel manual etsy">
-        <img src="../assets/images/rocket-reel.jpg" alt="Rocket Reel" />
-        <h3>Rocket Reel</h3>
-        <p>Compact and rugged hand line fishing reel built for real use, not shelf decoration.</p>
-        <div class="button-row">
-          <a class="btn btn-manual" href="../assets/docs/rocket-reel-manual.pdf" target="_blank">Manual</a>
-          <a class="btn btn-parts" href="../parts/">Parts</a>
-          <a class="btn btn-etsy" href="https://www.etsy.com/listing/YOUR-ROCKET-REEL-LINK" target="_blank">Buy on Etsy</a>
-        </div>
-      </div>
-
-      <div class="card product-card" data-search="timber tickler tool manual etsy">
-        <img src="../assets/images/timber-tickler.jpg" alt="Timber Tickler" />
-        <h3>Timber Tickler</h3>
-        <p>Useful field gear with a straightforward design and Ridge Runner personality.</p>
-        <div class="button-row">
-          <a class="btn btn-manual" href="../assets/docs/timber-tickler-manual.pdf" target="_blank">Manual</a>
-          <a class="btn btn-parts" href="../parts/">Parts</a>
-          <a class="btn btn-etsy" href="https://www.etsy.com/listing/YOUR-TIMBER-TICKLER-LINK" target="_blank">Buy on Etsy</a>
-        </div>
-      </div>
-
-      <div class="card product-card" data-search="walletul wallet kraken manual etsy">
-        <img src="../assets/images/walletul.jpg" alt="Walletul" />
-        <h3>Walletül</h3>
-        <p>Compact carry gear made to stay useful without getting too cute about it.</p>
-        <div class="button-row">
-          <a class="btn btn-manual" href="../assets/docs/walletul-manual.pdf" target="_blank">Manual</a>
-          <a class="btn btn-etsy" href="https://www.etsy.com/listing/YOUR-WALLETUL-LINK" target="_blank">Buy on Etsy</a>
-        </div>
-      </div>
-    </section>
+    <section class="card-grid" id="productsGrid"></section>
 
     <footer>
       Ridge Runner Gear Products • Built to work • Linked to Etsy
     </footer>
   </div>
 
-  <script src="../assets/js/search.js"></script>
+  <script src="../assets/js/products-data.js"></script>
+  <script>
+    const productsGrid = document.getElementById("productsGrid");
+
+    function buildProductCard(product) {
+      return `
+        <div class="card product-card" data-search="${product.search}">
+          <img src="${product.image}" alt="${product.title}" />
+          <h3>${product.title}</h3>
+          <p>${product.description}</p>
+          <div class="button-row">
+            <a class="btn btn-manual" href="${product.manual}" target="_blank">Manual</a>
+            <a class="btn btn-parts" href="${product.parts}">Parts</a>
+            <a class="btn btn-etsy" href="${product.etsy}" target="_blank">Buy on Etsy</a>
+          </div>
+        </div>
+      `;
+    }
+
+    productsGrid.innerHTML = productsData.map(buildProductCard).join("");
+
+    const searchInput = document.getElementById("siteSearch");
+
+    searchInput.addEventListener("input", () => {
+      const query = searchInput.value.trim().toLowerCase();
+      const items = document.querySelectorAll(".product-card");
+
+      items.forEach(item => {
+        const text = item.getAttribute("data-search").toLowerCase();
+        const title = item.querySelector("h3").textContent.toLowerCase();
+        const match = text.includes(query) || title.includes(query);
+        item.classList.toggle("hidden-card", !match);
+      });
+    });
+  </script>
 </body>
 </html>
