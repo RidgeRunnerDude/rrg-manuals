@@ -48,7 +48,7 @@ body {
 .logo-wrap {
   display: flex;
   justify-content: center;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 
 .site-logo {
@@ -70,8 +70,8 @@ body {
 .tagline {
   max-width: 700px;
   margin: auto;
-  color: #ddd5c7;
-  line-height: 1.5;
+  color: #e6e1d7;
+  line-height: 1.6;
 }
 
 /* ===============================
