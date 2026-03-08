@@ -52,9 +52,9 @@ body {
 }
 
 .site-logo {
-  width: 120px;
+  width: 200px;
   height: auto;
-  filter: drop-shadow(0 5px 10px rgba(0,0,0,0.6));
+  filter: drop-shadow(0 6px 14px rgba(0,0,0,0.7));
 }
 
 /* Title */
