@@ -1,0 +1,233 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f5f1e8;
+  background:
+    linear-gradient(rgba(8, 8, 8, 0.78), rgba(8, 8, 8, 0.90)),
+    url("../images/topo-bg.png") center center / cover no-repeat fixed;
+}
+
+a {
+  color: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+header.site-header {
+  text-align: center;
+  padding: 40px 20px 24px;
+}
+
+.brand {
+  font-size: 2.6rem;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.tagline {
+  max-width: 760px;
+  margin: 12px auto 0;
+  color: #ddd5c7;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.top-nav a {
+  text-decoration: none;
+  padding: 11px 16px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: #fff;
+  font-weight: bold;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.top-nav a:hover {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.search-wrap {
+  max-width: 600px;
+  margin: 26px auto 0;
+}
+
+.search-input {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.15);
+  background: rgba(255,255,255,0.09);
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+}
+
+.search-input::placeholder {
+  color: #d7d7d7;
+}
+
+.hero-grid,
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.hero-grid {
+  margin-top: 34px;
+}
+
+.card {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.13);
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 10px 22px rgba(0,0,0,0.25);
+  backdrop-filter: blur(4px);
+}
+
+.card h2,
+.card h3 {
+  margin-top: 0;
+  color: #fff6df;
+}
+
+.card p {
+  color: #e2ddd3;
+  line-height: 1.6;
+}
+
+.section-title {
+  margin: 42px 0 18px;
+  font-size: 1.7rem;
+  color: #fff6df;
+}
+
+.product-card img,
+.feature-img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 14px;
+  background: rgba(255,255,255,0.08);
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  opacity: 0.95;
+}
+
+.btn-etsy {
+  background: #f1641e;
+  color: #fff;
+}
+
+.btn-parts {
+  background: #2d6a4f;
+  color: #fff;
+}
+
+.btn-manual {
+  background: #4b4b4b;
+  color: #fff;
+}
+
+.btn-home {
+  background: #7b5e3b;
+  color: #fff;
+}
+
+.small-note {
+  color: #cfc7ba;
+  font-size: 0.95rem;
+}
+
+footer {
+  text-align: center;
+  color: #d2cabd;
+  padding: 42px 20px 54px;
+  font-size: 0.95rem;
+}
+
+.hidden-card {
+  display: none !important;
+}
+
+.page-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 26px;
+  color: #ddd5c7;
+  line-height: 1.6;
+}
+
+.manual-list {
+  display: grid;
+  gap: 16px;
+}
+
+.manual-item {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.13);
+  border-radius: 16px;
+  padding: 18px;
+}
+
+.manual-item h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 640px) {
+  .brand {
+    font-size: 2rem;
+  }
+
+  .container {
+    padding: 18px;
+  }
+
+  .product-card img,
+  .feature-img {
+    height: 170px;
+  }
+}

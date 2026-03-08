@@ -3,409 +3,103 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ridge Runner Gear Field Manuals</title>
-
-  <style>
-    body {
-      background-image:
-        linear-gradient(rgba(17,17,17,0.85), rgba(17,17,17,0.85)),
-        url("images/topo-bg.jpg");
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-      font-family: Arial, Helvetica, sans-serif;
-      color: #f2f0ea;
-      text-align: center;
-      margin: 0;
-      padding: 24px;
-    }
-
-    .panel {
-      max-width: 860px;
-      margin: 0 auto;
-      padding: 18px 28px 48px;
-      background: linear-gradient(180deg, rgba(42, 36, 29, 0.94) 0%, rgba(23, 23, 23, 0.94) 100%);
-      border: 1px solid rgba(196, 168, 120, 0.22);
-      border-radius: 18px;
-      box-shadow: 0 14px 36px rgba(0, 0, 0, 0.42);
-      backdrop-filter: blur(2px);
-    }
-
-    .topline {
-      color: #c8a977;
-      font-size: 0.78rem;
-      letter-spacing: 2.5px;
-      text-transform: uppercase;
-      margin: 4px 0 18px;
-    }
-
-    .logo {
-      max-width: 360px;
-      width: 80%;
-      margin: 0 auto 10px;
-      display: block;
-    }
-
-    h1 {
-      letter-spacing: 4px;
-      margin: 8px 0 8px;
-      font-size: 2.25rem;
-      color: #f6f1e7;
-    }
-
-    .subtitle {
-      color: #d9d0c3;
-      margin-bottom: 20px;
-      font-style: italic;
-      font-size: 1.1rem;
-    }
-
-    .search-wrap {
-      max-width: 660px;
-      margin: 0 auto 28px;
-      text-align: left;
-    }
-
-    .search-label {
-      display: block;
-      color: #c8a977;
-      font-size: 0.82rem;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      margin-bottom: 8px;
-    }
-
-    .search-box {
-      width: 100%;
-      box-sizing: border-box;
-      padding: 14px 16px;
-      border-radius: 10px;
-      border: 1px solid rgba(196, 168, 120, 0.28);
-      background: rgba(0, 0, 0, 0.28);
-      color: #f6f1e7;
-      font-size: 1rem;
-      outline: none;
-    }
-
-    .search-box::placeholder {
-      color: #b8ada0;
-    }
-
-    .search-box:focus {
-      border-color: rgba(215, 25, 28, 0.7);
-      box-shadow: 0 0 0 3px rgba(215, 25, 28, 0.16);
-    }
-
-    .results-note {
-      max-width: 660px;
-      margin: 0 auto 18px;
-      color: #b8ada0;
-      font-size: 0.92rem;
-      min-height: 20px;
-    }
-
-    .manual-list {
-      display: grid;
-      gap: 16px;
-      max-width: 660px;
-      margin: 0 auto;
-    }
-
-    .manual {
-      display: grid;
-      grid-template-columns: 88px 1fr;
-      align-items: center;
-      gap: 14px;
-      background: linear-gradient(180deg, #b51d1f 0%, #8f1416 100%);
-      color: white;
-      text-decoration: none;
-      padding: 16px 18px;
-      border-radius: 12px;
-      text-align: left;
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18);
-      transition: all 0.15s ease;
-    }
-
-    .manual:hover {
-      background: linear-gradient(180deg, #cb2326 0%, #a3171a 100%);
-      transform: translateY(-2px);
-      box-shadow: 0 0 18px rgba(215, 25, 28, 0.45);
-    }
-
-    .manual.hidden {
-      display: none;
-    }
-
-    .icon-box {
-      min-height: 64px;
-      border-radius: 10px;
-      background: rgba(0, 0, 0, 0.20);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 6px 8px;
-      font-size: 1rem;
-      font-weight: bold;
-      letter-spacing: 0.5px;
-      line-height: 1.05;
-      text-align: center;
-      word-break: break-word;
-      overflow-wrap: anywhere;
-    }
-
-    .manual-text {
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-    }
-
-    .manual-title {
-      font-size: 1.2rem;
-      font-weight: bold;
-      line-height: 1.2;
-      color: #ffffff;
-    }
-
-    .manual-subtitle {
-      font-size: 0.95rem;
-      opacity: 0.95;
-      color: #f7dfc5;
-    }
-
-    .footer {
-      margin-top: 34px;
-      color: #b8ada0;
-      font-size: 14px;
-      letter-spacing: 0.4px;
-    }
-
-    @media (max-width: 600px) {
-      body {
-        padding: 14px;
-      }
-
-      .panel {
-        padding: 16px 18px 34px;
-      }
-
-      .topline {
-        font-size: 0.72rem;
-        letter-spacing: 2px;
-        margin-bottom: 14px;
-      }
-
-      h1 {
-        font-size: 1.8rem;
-        letter-spacing: 3px;
-      }
-
-      .subtitle {
-        font-size: 1rem;
-        margin-bottom: 18px;
-      }
-
-      .manual {
-        grid-template-columns: 76px 1fr;
-        padding: 14px;
-      }
-
-      .icon-box {
-        min-height: 54px;
-        font-size: 0.82rem;
-        padding: 5px 6px;
-      }
-
-      .manual-title {
-        font-size: 1.05rem;
-      }
-
-      .manual-subtitle {
-        font-size: 0.9rem;
-      }
-    }
-  </style>
+  <title>Ridge Runner Gear</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <div class="panel">
-    <div class="topline">Run the Ridge • Official Operator Guides</div>
+  <div class="container">
+    <header class="site-header">
+      <h1 class="brand">Ridge Runner Gear</h1>
+      <p class="tagline">
+        Field manuals, useful gear, and replacement parts for folks who'd rather buy tools that work
+        than listen to fancy talk about them.
+      </p>
 
-    <img src="images/rrg_logo.png" class="logo" alt="Ridge Runner Gear logo" />
+      <nav class="top-nav">
+        <a href="index.html">Home</a>
+        <a href="products/">Products</a>
+        <a href="parts/">Replacement Parts</a>
+        <a href="manuals/">Manuals</a>
+        <a href="https://www.etsy.com/shop/YOURSHOPNAME" target="_blank">Shop on Etsy</a>
+      </nav>
 
-    <h1>RIDGE RUNNER GEAR</h1>
-    <p class="subtitle">Field Manuals • Product Documentation • Support Guides</p>
+      <div class="search-wrap">
+        <input
+          type="text"
+          id="siteSearch"
+          class="search-input"
+          placeholder="Search products, parts, and manuals..."
+        />
+      </div>
+    </header>
 
-    <div class="search-wrap">
-      <label class="search-label" for="manualSearch">Search manuals</label>
-      <input
-        type="text"
-        id="manualSearch"
-        class="search-box"
-        placeholder="Type a product name like Rocket Reel, Timber Tickler, Yak Rack..."
-      />
-    </div>
-
-    <div id="resultsNote" class="results-note"></div>
-
-    <div class="manual-list" id="manualList">
-      <a class="manual" href="./manuals/Blaster-Master-Manual.pdf" data-search="blaster master bm operator manual">
-        <div class="icon-box">BM</div>
-        <div class="manual-text">
-          <span class="manual-title">Blaster Master</span>
-          <span class="manual-subtitle">Operator Manual</span>
+    <section class="hero-grid">
+      <div class="card" data-search="products gear etsy buy complete item ridge runner gear">
+        <h2>Products</h2>
+        <p>Browse current Ridge Runner Gear products and jump straight to Etsy listings.</p>
+        <div class="button-row">
+          <a class="btn btn-home" href="products/">View Products</a>
         </div>
-      </a>
+      </div>
 
-      <a class="manual" href="./manuals/Reel-Rack-Manual.pdf" data-search="reel rack rk operator manual">
-        <div class="icon-box">RK</div>
-        <div class="manual-text">
-          <span class="manual-title">Reel Rack</span>
-          <span class="manual-subtitle">Operator Manual</span>
+      <div class="card" data-search="replacement parts spare repair hardware kit components">
+        <h2>Replacement Parts</h2>
+        <p>Need a spare part, replacement piece, or field repair hardware? Start here.</p>
+        <div class="button-row">
+          <a class="btn btn-parts" href="parts/">View Parts</a>
         </div>
-      </a>
+      </div>
 
-      <a class="manual" href="./manuals/Rocket-Reel-Manual.pdf" data-search="rocket reel rr operator manual">
-        <div class="icon-box">RR</div>
-        <div class="manual-text">
-          <span class="manual-title">Rocket Reel</span>
-          <span class="manual-subtitle">Operator Manual</span>
+      <div class="card" data-search="manuals field manuals instructions pdf setup guide help">
+        <h2>Field Manuals</h2>
+        <p>Printable manuals and product instructions in one easy place.</p>
+        <div class="button-row">
+          <a class="btn btn-manual" href="manuals/">Open Manuals</a>
         </div>
-      </a>
+      </div>
+    </section>
 
-      <a class="manual" href="./manuals/Tackle-Toter-L7C-Manual.pdf" data-search="tackle toter l7c ttl7c operator manual">
-        <div class="icon-box">TTL7C</div>
-        <div class="manual-text">
-          <span class="manual-title">Tackle Toter L7C</span>
-          <span class="manual-subtitle">Operator Manual</span>
+    <h2 class="section-title">Featured Gear</h2>
+
+    <section class="card-grid">
+      <div class="card product-card" data-search="rocket reel fishing hand line reel manual parts etsy">
+        <img src="assets/images/rocket-reel.jpg" alt="Rocket Reel" />
+        <h3>Rocket Reel</h3>
+        <p>A compact hand line reel built for practical use, easy carry, and backwoods simplicity.</p>
+        <div class="button-row">
+          <a class="btn btn-manual" href="assets/docs/rocket-reel-manual.pdf" target="_blank">Manual</a>
+          <a class="btn btn-parts" href="parts/">Parts</a>
+          <a class="btn btn-etsy" href="https://www.etsy.com/listing/YOUR-ROCKET-REEL-LINK" target="_blank">Buy on Etsy</a>
         </div>
-      </a>
+      </div>
 
-      <a class="manual" href="./manuals/Tackle-Toter-L12C-Manual.pdf" data-search="tackle toter l12c ttl12c operator manual">
-        <div class="icon-box">TTL12C</div>
-        <div class="manual-text">
-          <span class="manual-title">Tackle Toter L12C</span>
-          <span class="manual-subtitle">Operator Manual</span>
+      <div class="card product-card" data-search="timber tickler manual parts etsy ridge runner gear">
+        <img src="assets/images/timber-tickler.jpg" alt="Timber Tickler" />
+        <h3>Timber Tickler</h3>
+        <p>Simple, useful gear with a field-manual attitude and a little Ridge Runner character.</p>
+        <div class="button-row">
+          <a class="btn btn-manual" href="assets/docs/timber-tickler-manual.pdf" target="_blank">Manual</a>
+          <a class="btn btn-parts" href="parts/">Parts</a>
+          <a class="btn btn-etsy" href="https://www.etsy.com/listing/YOUR-TIMBER-TICKLER-LINK" target="_blank">Buy on Etsy</a>
         </div>
-      </a>
+      </div>
 
-      <a class="manual" href="./manuals/Tackle-Toter-M7C-Manual.pdf" data-search="tackle toter m7c ttm7c operator manual">
-        <div class="icon-box">TTM7C</div>
-        <div class="manual-text">
-          <span class="manual-title">Tackle Toter M7C</span>
-          <span class="manual-subtitle">Operator Manual</span>
+      <div class="card product-card" data-search="walletul kraken wallet manual etsy gear">
+        <img src="assets/images/walletul.jpg" alt="Walletul" />
+        <h3>Walletül</h3>
+        <p>Built to carry what matters without making a big theatrical production out of it.</p>
+        <div class="button-row">
+          <a class="btn btn-manual" href="assets/docs/walletul-manual.pdf" target="_blank">Manual</a>
+          <a class="btn btn-etsy" href="https://www.etsy.com/listing/YOUR-WALLETUL-LINK" target="_blank">Buy on Etsy</a>
         </div>
-      </a>
+      </div>
+    </section>
 
-      <a class="manual" href="./manuals/Tackle-Toter-M12C-Manual.pdf" data-search="tackle toter m12c ttm12c operator manual">
-        <div class="icon-box">TTM12C</div>
-        <div class="manual-text">
-          <span class="manual-title">Tackle Toter M12C</span>
-          <span class="manual-subtitle">Operator Manual</span>
-        </div>
-      </a>
-
-      <a class="manual" href="./manuals/Tackle-Toter-S7C-Manual.pdf" data-search="tackle toter s7c tts7c operator manual">
-        <div class="icon-box">TTS7C</div>
-        <div class="manual-text">
-          <span class="manual-title">Tackle Toter S7C</span>
-          <span class="manual-subtitle">Operator Manual</span>
-        </div>
-      </a>
-
-      <a class="manual" href="./manuals/Timber-Tickler-6N-Manual.pdf" data-search="timber tickler 6n t6n operator manual">
-        <div class="icon-box">T6N</div>
-        <div class="manual-text">
-          <span class="manual-title">Timber Tickler 6N</span>
-          <span class="manual-subtitle">Operator Manual</span>
-        </div>
-      </a>
-
-      <a class="manual" href="./manuals/Timber-Tickler-9N-Manual.pdf" data-search="timber tickler 9n t9n operator manual">
-        <div class="icon-box">T9N</div>
-        <div class="manual-text">
-          <span class="manual-title">Timber Tickler 9N</span>
-          <span class="manual-subtitle">Operator Manual</span>
-        </div>
-      </a>
-
-      <a class="manual" href="./manuals/Timber-Tickler-9W-Manual.pdf" data-search="timber tickler 9w t9w operator manual">
-        <div class="icon-box">T9W</div>
-        <div class="manual-text">
-          <span class="manual-title">Timber Tickler 9W</span>
-          <span class="manual-subtitle">Operator Manual</span>
-        </div>
-      </a>
-
-      <a class="manual" href="./manuals/Timber-Tickler-12N-Manual.pdf" data-search="timber tickler 12n t12n operator manual">
-        <div class="icon-box">T12N</div>
-        <div class="manual-text">
-          <span class="manual-title">Timber Tickler 12N</span>
-          <span class="manual-subtitle">Operator Manual</span>
-        </div>
-      </a>
-
-      <a class="manual" href="./manuals/Timber-Tickler-12W-Manual.pdf" data-search="timber tickler 12w t12w operator manual">
-        <div class="icon-box">T12W</div>
-        <div class="manual-text">
-          <span class="manual-title">Timber Tickler 12W</span>
-          <span class="manual-subtitle">Operator Manual</span>
-        </div>
-      </a>
-
-      <a class="manual" href="./manuals/Walletul-Release-Manual.pdf" data-search="walletul release wr operator manual walletul">
-        <div class="icon-box">WR</div>
-        <div class="manual-text">
-          <span class="manual-title">Walletül Release</span>
-          <span class="manual-subtitle">Operator Manual</span>
-        </div>
-      </a>
-
-      <a class="manual" href="./manuals/Yak-Rack-Manual.pdf" data-search="yak rack yr operator manual">
-        <div class="icon-box">YR</div>
-        <div class="manual-text">
-          <span class="manual-title">Yak Rack</span>
-          <span class="manual-subtitle">Operator Manual</span>
-        </div>
-      </a>
-    </div>
-
-    <p class="footer">Built for the trail. Built to last.</p>
+    <footer>
+      Ridge Runner Gear • Field Manuals • Products • Parts • Run the Ridge
+    </footer>
   </div>
 
-  <script>
-    const searchInput = document.getElementById("manualSearch");
-    const manuals = document.querySelectorAll(".manual");
-    const resultsNote = document.getElementById("resultsNote");
-
-    function filterManuals() {
-      const query = searchInput.value.trim().toLowerCase();
-      let visibleCount = 0;
-
-      manuals.forEach((manual) => {
-        const searchText = manual.getAttribute("data-search").toLowerCase();
-        const matches = searchText.includes(query);
-
-        if (matches) {
-          manual.classList.remove("hidden");
-          visibleCount++;
-        } else {
-          manual.classList.add("hidden");
-        }
-      });
-
-      if (query === "") {
-        resultsNote.textContent = "";
-      } else if (visibleCount === 0) {
-        resultsNote.textContent = 'No manuals found for "' + searchInput.value + '".';
-      } else if (visibleCount === 1) {
-        resultsNote.textContent = "1 manual found.";
-      } else {
-        resultsNote.textContent = visibleCount + " manuals found.";
-      }
-    }
-
-    searchInput.addEventListener("input", filterManuals);
-  </script>
+  <script src="assets/js/search.js"></script>
 </body>
 </html>
