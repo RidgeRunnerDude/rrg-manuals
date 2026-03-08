@@ -1,103 +1,182 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-<title>Ridge Runner Gear Field Manuals</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ridge Runner Gear Field Manuals</title>
 
-<style>
+  <style>
+    body {
+      background: #0f0f10;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #f2f2f2;
+      text-align: center;
+      margin: 0;
+      padding: 24px;
+    }
 
-body {
-    background-color:#111;
-    font-family: Arial, Helvetica, sans-serif;
-    color:#f2f2f2;
-    text-align:center;
-    margin:0;
-}
+    .panel {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 40px 28px 48px;
+      background: linear-gradient(180deg, #1a1a1c 0%, #141416 100%);
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.35);
+    }
 
-/* container panel */
-.panel{
-    max-width:700px;
-    margin:80px auto;
-    padding:40px;
-    background-color:#1b1b1b;
-    border-radius:12px;
-}
+    .logo {
+      max-width: 360px;
+      width: 80%;
+      margin: 0 auto 10px;
+      display: block;
+    }
 
-/* logo */
-.logo{
-    max-width:420px;
-    width:85%;
-    margin-bottom:10px;
-}
+    h1 {
+      letter-spacing: 4px;
+      margin: 8px 0 8px;
+      font-size: 2.25rem;
+    }
 
-/* title */
-h1{
-    letter-spacing:3px;
-    margin-bottom:10px;
-}
+    .subtitle {
+      color: #d7d7d7;
+      margin-bottom: 34px;
+      font-style: italic;
+      font-size: 1.15rem;
+    }
 
-/* subtitle */
-.subtitle{
-    color:#cccccc;
-    margin-bottom:30px;
-    font-style:italic;
-}
+    .manual-list {
+      display: grid;
+      gap: 16px;
+      max-width: 640px;
+      margin: 0 auto;
+    }
 
-/* manual buttons */
-.manual{
-    display:block;
-    background-color:#c81e1e;
-    color:white;
-    text-decoration:none;
-    padding:14px;
-    margin:12px auto;
-    border-radius:6px;
-    width:75%;
-    font-weight:bold;
-    box-shadow:0 0 10px rgba(200,30,30,0.4);
-}
+    .manual {
+      display: grid;
+      grid-template-columns: 64px 1fr;
+      align-items: center;
+      gap: 14px;
+      background-color: #d7191c;
+      color: white;
+      text-decoration: none;
+      padding: 16px 18px;
+      border-radius: 10px;
+      text-align: left;
+      box-shadow: 0 0 10px rgba(215, 25, 28, 0.28);
+      transition: all .15s ease;
+    }
 
-.manual:hover{
-    background-color:#ff3a3a;
-}
+    .manual:hover {
+      background-color: #f02629;
+      transform: translateY(-2px);
+    }
 
-/* footer */
-.footer{
-    margin-top:30px;
-    color:#888;
-    font-size:14px;
-}
+    .icon-box {
+      width: 64px;
+      height: 64px;
+      border-radius: 8px;
+      background: rgba(0,0,0,.18);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.7rem;
+      font-weight: bold;
+    }
 
-</style>
+    .manual-text {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .manual-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      line-height: 1.2;
+    }
+
+    .manual-subtitle {
+      font-size: .95rem;
+      opacity: .95;
+    }
+
+    .footer {
+      margin-top: 34px;
+      color: #9d9d9d;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 14px;
+      }
+
+      .panel {
+        padding: 28px 18px 34px;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+        letter-spacing: 3px;
+      }
+
+      .manual {
+        grid-template-columns: 54px 1fr;
+        padding: 14px;
+      }
+
+      .icon-box {
+        width: 54px;
+        height: 54px;
+        font-size: 1.4rem;
+      }
+
+      .manual-title {
+        font-size: 1.05rem;
+      }
+
+      .manual-subtitle {
+        font-size: .9rem;
+      }
+    }
+  </style>
 </head>
-
 <body>
 
-<div class="panel">
+  <div class="panel">
+    <img src="rrg_logo.png" class="logo" alt="Ridge Runner Gear logo" />
 
-<img src="rrg-logo.png" class="logo">
+    <h1>RIDGE RUNNER GEAR</h1>
+    <p class="subtitle">Official Field Manuals</p>
 
-<h1>RIDGE RUNNER GEAR</h1>
+    <div class="manual-list">
+      <a class="manual" href="./manuals/Blaster-Master-Manual.pdf">
+        <div class="icon-box">BM</div>
+        <div class="manual-text">
+          <span class="manual-title">Blaster Master</span>
+          <span class="manual-subtitle">Operator Manual</span>
+        </div>
+      </a>
 
-<p class="subtitle">Official Field Manuals</p>
+      <a class="manual" href="./manuals/Rocket-Reel-Manual.pdf">
+        <div class="icon-box">RR</div>
+        <div class="manual-text">
+          <span class="manual-title">Rocket Reel</span>
+          <span class="manual-subtitle">Operator Manual</span>
+        </div>
+      </a>
 
-<a class="manual" href="./manuals/Blaster-Master-Manual.pdf">
-Blaster Master – Operator Manual
-</a>
+      <a class="manual" href="./manuals/Walletul-Release-Manual.pdf">
+        <div class="icon-box">WR</div>
+        <div class="manual-text">
+          <span class="manual-title">Walletül Release</span>
+          <span class="manual-subtitle">Operator Manual</span>
+        </div>
+      </a>
+    </div>
 
-<a class="manual" href="./manuals/Rocket-Reel-Manual.pdf">
-Rocket Reel – Operator Manual
-</a>
-
-<a class="manual" href="./manuals/Walletul-Release-Manual.pdf">
-Walletül Release – Operator Manual
-</a>
-
-<p class="footer">
-Built for the trail. Built to last.
-</p>
-
-</div>
+    <p class="footer">Built for the trail. Built to last.</p>
+  </div>
 
 </body>
 </html>
