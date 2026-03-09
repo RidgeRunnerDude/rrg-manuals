@@ -360,6 +360,44 @@ body {
   line-height: 1.55;
 }
 
+.manual-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  padding: 24px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.30);
+}
+
+.manual-card h2,
+.manual-card h3 {
+  margin-top: 0;
+  color: #fff;
+}
+
+.manual-card p {
+  color: #ddd;
+  line-height: 1.6;
+}
+
+.manual-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 18px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  background: #e0c38c;
+  color: #000;
+  transition: all 0.15s ease;
+}
+
+.manual-button:hover {
+  transform: translateY(-1px);
+  opacity: 0.92;
+}
+
 
 /* ===============================
    PRODUCT CARDS

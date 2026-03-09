@@ -5,6 +5,163 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ridge Runner Gear</title>
   <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    .home-quick-links {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      margin-top: 35px;
+      margin-bottom: 40px;
+    }
+
+    .quick-link-card {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 14px;
+      padding: 26px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    }
+
+    .quick-link-card h2 {
+      margin-top: 0;
+      margin-bottom: 12px;
+    }
+
+    .quick-link-card p {
+      margin-bottom: 20px;
+    }
+
+    .hero-spotlight {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 28px;
+      align-items: center;
+      margin-top: 20px;
+      margin-bottom: 55px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 16px;
+      padding: 28px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+    }
+
+    .hero-spotlight-text .eyebrow {
+      font-size: 0.8rem;
+      letter-spacing: 2px;
+      opacity: 0.8;
+      margin-bottom: 10px;
+    }
+
+    .hero-spotlight-text h2 {
+      margin-top: 0;
+      margin-bottom: 14px;
+    }
+
+    .hero-spotlight-image img {
+      width: 100%;
+      max-width: 460px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 20px;
+    }
+
+    .rrg-philosophy {
+      margin-top: 55px;
+      margin-bottom: 55px;
+      text-align: center;
+    }
+
+    .rrg-philosophy h2 {
+      margin-bottom: 14px;
+    }
+
+    .philosophy-intro {
+      max-width: 760px;
+      margin: 0 auto 30px auto;
+    }
+
+    .philosophy-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 24px;
+      margin-top: 24px;
+    }
+
+    .philosophy-item {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 14px;
+      padding: 24px;
+      text-align: left;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    }
+
+    .philosophy-item h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .about-preview {
+      margin-top: 20px;
+      margin-bottom: 55px;
+    }
+
+    .about-preview h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .about-preview p {
+      max-width: 850px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .learn-more-wrap {
+      text-align: center;
+      margin-top: 22px;
+    }
+
+    .site-closing {
+      text-align: center;
+      margin-top: 45px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .site-closing p {
+      margin-bottom: 10px;
+    }
+
+    .site-tagline {
+      margin: 0;
+      font-size: 1.05rem;
+      letter-spacing: 1px;
+      opacity: 0.9;
+      font-weight: 600;
+    }
+
+    @media (max-width: 700px) {
+      .hero-spotlight {
+        padding: 22px;
+      }
+
+      .button-row {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .button-row a {
+        text-align: center;
+      }
+    }
+  </style>
 </head>
 <body>
   <div class="container">
@@ -20,7 +177,7 @@
       </p>
 
       <nav class="top-nav">
-        <a href="./">Home</a>
+        <a href="./" class="active">Home</a>
         <a href="products/">Products</a>
         <a href="parts/">Replacement Parts</a>
         <a href="manuals/">Manuals</a>
@@ -47,58 +204,111 @@
         </div>
       </section>
 
-<section class="hero-spotlight">
+      <section class="home-quick-links">
+        <article class="quick-link-card">
+          <h2>Shop Products</h2>
+          <p>
+            Explore practical outdoor gear designed for rugged utility, refined simplicity,
+            and real use in the field.
+          </p>
+          <a href="products/" class="manual-button">Browse Gear</a>
+        </article>
 
-  <div class="hero-spotlight-text">
+        <article class="quick-link-card">
+          <h2>Our Story</h2>
+          <p>
+            Learn how Ridge Runner Gear grew from Appalachian roots, engineering experience,
+            and the simple question: <em>“Wouldn’t it be nice if…”</em>
+          </p>
+          <a href="about/" class="manual-button">Learn More</a>
+        </article>
+      </section>
 
-    <p class="eyebrow">FEATURED GEAR</p>
+      <section class="hero-spotlight">
+        <div class="hero-spotlight-text">
+          <p class="eyebrow">FEATURED GEAR</p>
 
-    <h2>Rocket Reel</h2>
+          <h2>Rocket Reel</h2>
 
-    <p>
-      A compact hand-line fishing reel designed for durability, simplicity,
-      and real outdoor use. Built with ASA, TPU, and stainless steel for
-      rugged performance in the field.
-    </p>
+          <p>
+            A compact hand-line fishing reel designed for durability, simplicity,
+            and real outdoor use. Built with ASA, TPU, and stainless steel for
+            rugged performance in the field.
+          </p>
 
-    <p>
-      Designed to be lightweight, reliable, and easy to repair so it earns
-      its place in your pack.
-    </p>
+          <p>
+            Lightweight, dependable, and easy to repair, the Rocket Reel is built
+            to earn its place in your pack instead of taking up space in it.
+          </p>
 
-    <div class="button-row">
-      <a href="products/" class="btn btn-home">Browse Gear</a>
-      <a href="manuals/" class="btn btn-manual">View Manual</a>
-    </div>
+          <div class="button-row">
+            <a href="products/" class="manual-button">Browse Gear</a>
+            <a href="manuals/" class="manual-button">View Manual</a>
+          </div>
+        </div>
 
-  </div>
+        <div class="hero-spotlight-image">
+          <img src="assets/images/rocket-reel.png" alt="Rocket Reel by Ridge Runner Gear" />
+        </div>
+      </section>
 
-  <div class="hero-spotlight-image">
-    <img src="assets/images/rocket-reel.png" alt="Rocket Reel by Ridge Runner Gear">
-  </div>
+      <section class="rrg-philosophy">
+        <h2>The Ridge Runner Gear Philosophy</h2>
 
-</section>
+        <p class="philosophy-intro">
+          Outdoor gear should earn its place in your pack. Every Ridge Runner design
+          is built around practical use, thoughtful engineering, and real time spent outdoors.
+        </p>
+
+        <div class="philosophy-grid">
+          <article class="philosophy-item">
+            <h3>Do More With Less</h3>
+            <p>
+              Multi-use gear means fewer items to carry, fewer parts to fail,
+              and fewer problems to solve once you’re out on the trail.
+            </p>
+          </article>
+
+          <article class="philosophy-item">
+            <h3>Designed With Engineering</h3>
+            <p>
+              Every product begins as a detailed CAD model so each part has a purpose
+              before it ever reaches the outdoors.
+            </p>
+          </article>
+
+          <article class="philosophy-item">
+            <h3>Built For Real Use</h3>
+            <p>
+              Ridge Runner Gear is designed by people who actually use it — tested
+              in the field, refined on the workbench, and built to last.
+            </p>
+          </article>
+        </div>
+      </section>
 
       <section class="about-preview">
         <h2>Born in the Appalachians</h2>
 
         <p>
           Ridge Runner Gear started in the mountains of Blue Ridge, Georgia — where locals
-          say ridge runners grow up with one leg longer than the other from walking hillsides.
+          joke that ridge runners grow up with one leg longer than the other from walking hillsides.
         </p>
 
         <p>
           After retiring from a career as a mechanical design engineer, I began designing
-          gear for my favorite kind of adventure: luxury base-camp backpacking. Too many trips
-          with friends included the phrase <em>“Wouldn’t it be nice if…”</em>
+          gear for my favorite kind of adventure: luxury base-camp backpacking.
         </p>
 
         <p>
+          Too many trips with friends included the phrase <em>“Wouldn’t it be nice if…”</em>
           That question became the foundation of Ridge Runner Gear: outdoor tools designed
           to do more, carry less, and last longer.
         </p>
 
-        <a href="about/" class="learn-more-btn">Learn More About RRG →</a>
+        <div class="learn-more-wrap">
+          <a href="about/" class="learn-more-btn">Learn More About RRG →</a>
+        </div>
       </section>
 
       <section class="manual-list">
@@ -129,9 +339,14 @@
         </div>
       </section>
 
-      <p class="site-tagline">
-        Designed and built in the foothills of the Appalachian Mountains.
-      </p>
+      <section class="site-closing">
+        <p>
+          Small-batch gear. Real engineering. Trail-ready utility.
+        </p>
+        <p class="site-tagline">
+          Built in the Appalachians. Tested on the ridge.
+        </p>
+      </section>
     </main>
   </div>
 </body>
