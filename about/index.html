@@ -5,6 +5,80 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Ridge Runner Gear</title>
   <link rel="stylesheet" href="../assets/css/style.css" />
+  <style>
+    .about-hero {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .about-hero p {
+      max-width: 850px;
+      margin: 0 auto;
+    }
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+      margin-top: 25px;
+    }
+
+    .process-card {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    }
+
+    .process-card img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .process-card-content {
+      padding: 18px;
+    }
+
+    .process-card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 1.15rem;
+    }
+
+    .process-intro {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .about-highlight {
+      text-align: center;
+      font-size: 1.1rem;
+      margin-top: 8px;
+      margin-bottom: 0;
+    }
+
+    .about-quote {
+      text-align: center;
+      font-style: italic;
+      font-size: 1.1rem;
+      margin: 10px 0 0 0;
+    }
+
+    .founder-note {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 14px;
+      padding: 24px;
+      margin-top: 30px;
+    }
+
+    .manual-card ul {
+      padding-left: 20px;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
@@ -29,7 +103,7 @@
     </header>
 
     <main class="manual-list">
-      <section class="manual-card">
+      <section class="manual-card about-hero">
         <h2>Our Story</h2>
 
         <p>
@@ -49,14 +123,11 @@
         </p>
 
         <p>
-          I enjoy the wilderness, but I also appreciate a few creature comforts while “roughing it.”
-        </p>
-
-        <p>
+          I enjoy the wilderness, but I also appreciate a few creature comforts while roughing it.
           On many trips with friends, we kept saying the same thing:
         </p>
 
-        <p><em>“Wouldn’t it be nice if…”</em></p>
+        <p class="about-quote">“Wouldn’t it be nice if…”</p>
 
         <p>
           Wouldn’t it be nice if one piece of gear could do two jobs?<br />
@@ -67,23 +138,83 @@
           That idea became <strong>Ridge Runner Gear</strong>.
         </p>
 
+        <p class="about-highlight">
+          <strong>Design rugged outdoor tools that do more, weigh less, and last longer.</strong>
+        </p>
+      </section>
+
+      <section class="manual-card">
+        <h2>From CAD to Campfire</h2>
+
+        <p class="process-intro">
+          Ridge Runner Gear is a small workshop brand built around real use, real engineering, and real field experience.
+          Every product starts as an idea, becomes a detailed CAD model, moves through prototyping and production,
+          and is assembled by hand in small batches.
+        </p>
+
+        <div class="process-grid">
+          <article class="process-card">
+            <img src="../assets/images/cad.png" alt="Ridge Runner Gear CAD design station showing product development in Creo" />
+            <div class="process-card-content">
+              <h3>Engineering &amp; Design</h3>
+              <p>
+                Every Ridge Runner product begins as a detailed engineering model in Creo. Design comes first, so every part
+                has a purpose before it ever reaches the trail.
+              </p>
+            </div>
+          </article>
+
+          <article class="process-card">
+            <img src="../assets/images/3dprinters.png" alt="Ridge Runner Gear 3D printer station used for prototyping and production" />
+            <div class="process-card-content">
+              <h3>Modern Manufacturing</h3>
+              <p>
+                Precision parts are produced using advanced 3D printing technology that allows rapid testing, refinement,
+                and dependable small-batch production.
+              </p>
+            </div>
+          </article>
+
+          <article class="process-card">
+            <img src="../assets/images/assembly.png" alt="Ridge Runner Gear assembly table with multiple products laid out for hand assembly" />
+            <div class="process-card-content">
+              <h3>Small-Batch Assembly</h3>
+              <p>
+                Components are assembled, inspected, and finished by hand. That keeps quality high and ensures each piece
+                is ready for practical field use.
+              </p>
+            </div>
+          </article>
+
+          <article class="process-card">
+            <img src="../assets/images/workbench.png" alt="Ridge Runner Gear workbench where products are assembled, tested, and improved" />
+            <div class="process-card-content">
+              <h3>The Ridge Runner Workbench</h3>
+              <p>
+                This is where gear gets assembled, tested, adjusted, and improved. Sometimes future products even sneak onto
+                the bench before they officially launch.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="manual-card">
+        <h2>What Makes RRG Different</h2>
+
         <p>
-          Our mission is simple: <strong>design rugged outdoor tools that do more, weigh less, and last longer.</strong>
+          We believe outdoor gear should earn its place in your pack. If it doesn’t make a trip lighter, simpler,
+          more capable, or more enjoyable, it doesn’t belong in the Ridge Runner Gear lineup.
         </p>
 
         <p>
-          We wanted gear with more than one purpose so we could carry less without giving up comfort or capability.
-          We also wanted gear that could be <strong>refurbished</strong> to extend its life, reduce waste, and be more
-          cost-effective over time.
+          Our products are designed with a strong focus on <strong>multi-use function, repairability, and long-term value</strong>.
+          We want gear that works hard, lasts a long time, and can be refurbished whenever possible instead of simply thrown away.
         </p>
 
         <p>
-          Every product is designed, manufactured, and assembled by hand. Whenever possible, we use
-          <strong>American-sourced materials</strong> and components.
-        </p>
-
-        <p>
-          Our gear is built using materials chosen specifically for outdoor durability:
+          Whenever possible, we use <strong>American-sourced materials</strong> and components. Materials are selected specifically
+          for outdoor durability and real-world performance:
         </p>
 
         <ul>
@@ -94,9 +225,6 @@
 
         <p>
           Ridge Runner Gear is still a <strong>very small company — right now it’s just me.</strong>
-        </p>
-
-        <p>
           And that’s intentional. It means every design solves a real problem experienced on the trail.
         </p>
       </section>
@@ -109,13 +237,13 @@
         </p>
 
         <p>
-          Our gear is meticulously engineered for those who seek the serenity of the wilderness without sacrificing
-          the sophistication of well-designed essentials. Whether you’re setting up a base camp beneath alpine stars
-          or trekking toward your next breathtaking vista, our products deliver premium performance with minimalist weight.
+          We build gear for people who want practical tools, thoughtful design, and trail-ready durability without carrying
+          more than they need. Some folks call it roughing it. We just think it ought to work better.
         </p>
 
         <p>
-          Because luxury isn’t about excess — it’s about excellence, wherever the trail leads.
+          Luxury in the outdoors isn’t about excess. It’s about well-designed gear that makes camp life easier,
+          more efficient, and more enjoyable.
         </p>
       </section>
 
@@ -123,8 +251,8 @@
         <h2>Our Values</h2>
 
         <p>
-          We are a <strong>faith-based company</strong>, guided by Christian values in everything we do — from the way
-          we design our gear to how we serve our customers.
+          We are a <strong>faith-based company</strong>, guided by Christian values in how we design gear, serve customers,
+          and do business.
         </p>
 
         <p>
@@ -138,13 +266,13 @@
         <h2>American Made, Trail Ready</h2>
 
         <p>
-          Proudly <strong>American Made</strong>, our gear is built with rugged durability and refined utility for the
-          serious adventurer.
+          Proudly <strong>American Made</strong>, Ridge Runner Gear is built with rugged durability and refined utility
+          for people who actually use their gear.
         </p>
 
         <p>
-          If it doesn’t help make a trip lighter, simpler, more useful, or more enjoyable, it doesn’t belong in the
-          Ridge Runner Gear lineup.
+          We’re not trying to build more stuff just to build more stuff. We’re trying to build better tools for the trail,
+          the campsite, and the kind of trips that leave a story behind.
         </p>
       </section>
 
