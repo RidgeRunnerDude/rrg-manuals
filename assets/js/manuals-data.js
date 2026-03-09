@@ -17,6 +17,12 @@ const manualsData = [
     etsy: "https://www.etsy.com/listing/YOUR-ROCKET-REEL-LINK",
     search: "rocket reel manual pdf fishing hand line"
   },
+ {
+    title: "Tack Rack Manual",
+    pdf: "../assets/docs/Tack-Rack-Manual.pdf",
+    etsy: "https://www.etsy.com/listing/YOUR-TACK-RACK-LINK",
+    search: "tack rack manual pdf"
+  },
   {
     title: "Tackle Toter L7C Manual",
     pdf: "../assets/docs/Tackle-Toter-L7C-Manual.pdf",
