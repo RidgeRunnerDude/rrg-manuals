@@ -422,3 +422,134 @@ footer {
   }
 
 }
+
+/* ===============================
+   ABOUT
+================================ */
+
+.about-preview {
+  margin-top: 60px;
+  padding: 30px;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 10px;
+  background: rgba(0,0,0,0.35);
+}
+
+.learn-more-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 18px;
+  background: #e0c38c;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+.learn-more-btn:hover {
+  opacity: 0.9;
+}
+
+/* ===============================
+   HERO BANNER
+================================ */
+
+.hero-banner {
+  margin-top: 30px;
+  border-radius: 14px;
+  overflow: hidden;
+  background:
+    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)),
+    url("../images/topo-bg.jpg") center/cover no-repeat;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.hero-overlay {
+  padding: 60px 30px;
+  text-align: center;
+}
+
+.hero-logo {
+  max-width: 120px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.hero-banner h2 {
+  margin: 0 0 15px;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.hero-banner p {
+  max-width: 700px;
+  margin: 0 auto 25px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.hero-btn {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.2s ease;
+}
+
+.hero-btn.primary {
+  background: #e0c38c;
+  color: #000;
+}
+
+.hero-btn.secondary {
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.hero-btn:hover {
+  transform: translateY(-1px);
+  opacity: 0.95;
+}
+
+.about-preview {
+  margin-top: 60px;
+  padding: 30px;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 10px;
+  background: rgba(0,0,0,0.35);
+}
+
+.learn-more-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 18px;
+  background: #e0c38c;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+.learn-more-btn:hover {
+  opacity: 0.9;
+}
+
+.site-tagline {
+  margin: 50px 0 20px;
+  text-align: center;
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.75);
+}
+
+.top-nav a.active {
+  border-bottom: 2px solid #e0c38c;
+}
