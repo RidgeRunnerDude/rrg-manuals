@@ -1,7 +1,7 @@
 const productsData = [
   {
     title: "Rocket Reel",
-    description: "A compact hand line reel built for practical use, easy carry, and backwoods simplicity.",
+    description: "A compact, waterproof hand-line fishing reel built for lightweight backcountry fishing anywhere you roam.",
     image: "../assets/images/rocket-reel.png",
     manual: "../assets/docs/Rocket-Reel-Manual.pdf",
     parts: "../parts/",
@@ -10,7 +10,7 @@ const productsData = [
   },
   {
     title: "Timber Tickler 6N",
-    description: "A practical Ridge Runner tool with field-manual attitude and straightforward use.",
+    description: "A pocket-sized precision cutter built for quick, clean work on small branches, overgrown brush, and campfire prep.",
     image: "../assets/images/6ntimbertickler.png",
     manual: "../assets/docs/Timber-Tickler-6N-Manual.pdf",
     parts: "../parts/",
@@ -19,7 +19,7 @@ const productsData = [
   },
   {
     title: "Timber Tickler 9N",
-    description: "Useful outdoor gear built to work without overcomplicating the job.",
+    description: "A capable pruning saw built for clearing branches, trail work, and handling those not-so-little limbs around camp.",
     image: "../assets/images/9ntimbertickler.png",
     manual: "../assets/docs/Timber-Tickler-9N-Manual.pdf",
     parts: "../parts/",
@@ -28,7 +28,7 @@ const productsData = [
   },
   {
     title: "Timber Tickler 9W",
-    description: "A Ridge Runner Gear product designed for practical field use and easy support access.",
+    description: "A wide-blade field saw designed for bigger limbs and tougher cutting jobs around camp or on the trail.",
     image: "../assets/images/9wtimbertickler.png",
     manual: "../assets/docs/Timber-Tickler-9W-Manual.pdf",
     parts: "../parts/",
@@ -37,7 +37,7 @@ const productsData = [
   },
   {
     title: "Timber Tickler 12N",
-    description: "Field-ready gear with a simple support path from manual to Etsy purchase.",
+    description: "A long-reach pruning saw built for thicker branches without sacrificing precision and control.",
     image: "../assets/images/12ntimbertickler.png",
     manual: "../assets/docs/Timber-Tickler-12N-Manual.pdf",
     parts: "../parts/",
@@ -46,7 +46,7 @@ const productsData = [
   },
   {
     title: "Timber Tickler 12W",
-    description: "Built with the Ridge Runner Gear support model: manual, parts, and Etsy purchase.",
+    description: "A wide-blade field saw designed to tackle serious branches while still keeping your pack light.",
     image: "../assets/images/12wtimbertickler.png",
     manual: "../assets/docs/Timber-Tickler-12W-Manual.pdf",
     parts: "../parts/",
@@ -55,7 +55,7 @@ const productsData = [
   },
   {
     title: "Walletül Release",
-    description: "Compact carry gear made to stay useful without making a big production out of it.",
+    description: "A rugged everyday wallet with a self-resetting QuadCam lift system that holds your cards and cash while pulling double duty as a lightweight pocket multi-tool.",
     image: "../assets/images/walletul.png",
     manual: "../assets/docs/Walletul-Release-Manual.pdf",
     parts: "../parts/",
@@ -64,7 +64,7 @@ const productsData = [
   },
   {
     title: "Yak Rack",
-    description: "A straightforward Ridge Runner product with manual support and direct Etsy access.",
+    description: "A rugged kayak gear mount that keeps your Rocket Reel and Tackle Toter secure, organized, and ready while you paddle.",
     image: "../assets/images/YakRack.png",
     manual: "../assets/docs/Yak-Rack-Manual.pdf",
     parts: "../parts/",
@@ -73,7 +73,7 @@ const productsData = [
   },
   {
     title: "Reel Rack",
-    description: "Storage and organization gear backed by a manual and direct Etsy purchase link.",
+    description: "A compact reel mount that clips your Rocket Reel onto chairs, poles, or rails so you can fish hands-free.",
     image: "../assets/images/reelrack.png",
     manual: "../assets/docs/Reel-Rack-Manual.pdf",
     parts: "../parts/",
@@ -82,7 +82,7 @@ const productsData = [
   },
   {
     title: "Blaster Master",
-    description: "A Ridge Runner Gear product supported by downloadable instructions and Etsy listing access.",
+    description: "A lightweight three-in-one trail hygiene attachment that converts a standard bottle into a shower, bidet, or secure cap.",
     image: "../assets/images/BlasterMaster.png",
     manual: "../assets/docs/Blaster-Master-Manual.pdf",
     parts: "../parts/",
@@ -91,7 +91,7 @@ const productsData = [
   },
   {
     title: "Tackle Toter L7C",
-    description: "Compact tackle organization with direct manual access and Etsy purchase link.",
+    description: "A compact tactical tackle organizer with seven covered compartments and a front Rocket Reel mount for quick-access fishing gear.",
     image: "../assets/images/l7ctackletoter.png",
     manual: "../assets/docs/Tackle-Toter-L7C-Manual.pdf",
     parts: "../parts/",
@@ -100,7 +100,7 @@ const productsData = [
   },
   {
     title: "Tackle Toter L12C",
-    description: "Tackle storage supported by a clean manual-plus-Etsy flow.",
+    description: "A high-capacity tackle organizer with twelve covered compartments and a front Rocket Reel mount for organized fishing on the move.",
     image: "../assets/images/l12ctackletoter.png",
     manual: "../assets/docs/Tackle-Toter-L12C-Manual.pdf",
     parts: "../parts/",
@@ -109,7 +109,7 @@ const productsData = [
   },
   {
     title: "Tackle Toter M7C",
-    description: "Practical storage gear with quick access to support documents and purchase links.",
+    description: "A slim-profile tackle organizer with seven covered compartments and a front Rocket Reel mount for lightweight fishing setups.",
     image: "../assets/images/m7ctackletoter.png",
     manual: "../assets/docs/Tackle-Toter-M7C-Manual.pdf",
     parts: "../parts/",
@@ -118,7 +118,7 @@ const productsData = [
   },
   {
     title: "Tackle Toter M12C",
-    description: "A Ridge Runner storage option with direct support and buying path.",
+    description: "A slim-profile tackle organizer with twelve covered compartments and a front Rocket Reel mount for streamlined fishing setups.",
     image: "../assets/images/m12ctackletoter.png",
     manual: "../assets/docs/Tackle-Toter-M12C-Manual.pdf",
     parts: "../parts/",
@@ -127,11 +127,21 @@ const productsData = [
   },
   {
     title: "Tackle Toter S7C",
-    description: "Compact storage gear with manual access and Etsy purchase flow.",
+    description: "A small but capable tackle organizer with seven covered compartments and a front Rocket Reel mount for minimal fishing setups.",
     image: "../assets/images/s7ctackletoter.png",
     manual: "../assets/docs/Tackle-Toter-S7C-Manual.pdf",
     parts: "../parts/",
     etsy: "https://www.etsy.com/listing/YOUR-TACKLE-TOTER-S7C-LINK",
     search: "tackle toter s7c manual parts etsy"
   }
+{
+    title: "Tack Rack",
+    description: "A lightweight tackle mount that clips your Tackle Toter onto chairs, poles, or rails for easy access while you fish.",
+    image: "../assets/images/tackrack.png",
+    manual: "../assets/docs/Tack-Rack-Manual.pdf",
+    parts: "../parts/",
+    etsy: "https://www.etsy.com/listing/YOUR-TACKLE-TOTER-S7C-LINK",
+    search: "tack rack manual parts etsy"
+  }
+
 ];
