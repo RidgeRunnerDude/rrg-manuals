@@ -133,7 +133,7 @@ const productsData = [
     parts: "../parts/",
     etsy: "https://www.etsy.com/listing/YOUR-TACKLE-TOTER-S7C-LINK",
     search: "tackle toter s7c manual parts etsy"
-  }
+  },
 {
     title: "Tack Rack",
     description: "A lightweight tackle mount that clips your Tackle Toter onto chairs, poles, or rails for easy access while you fish.",
