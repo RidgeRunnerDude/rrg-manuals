@@ -143,5 +143,4 @@ const productsData = [
     etsy: "https://www.etsy.com/listing/YOUR-TACKLE-TOTER-S7C-LINK",
     search: "tack rack manual parts etsy"
   }
-
 ];
