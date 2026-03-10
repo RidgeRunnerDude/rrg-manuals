@@ -1,16 +1,16 @@
 const partsData = [
   {
-    title: "Rocket Reel Replacement Part",
+    title: "Rocket Reel Replacement Parts",
     description: "Replacement part listing for the Rocket Reel.",
-    image: "../assets/images/rrg_logo.png",
+    image: "../assets/images/rocketreelassy.png",
     manual: "../assets/docs/Rocket-Reel-Manual.pdf",
     etsy: "https://www.etsy.com/listing/YOUR-ROCKET-REEL-PART-LINK",
     search: "rocket reel replacement part spool repair hardware etsy manual"
   },
   {
-    title: "Rocket Reel Hardware Kit",
-    description: "Replacement hardware kit for wear, repairs, or backup storage.",
-    image: "../assets/images/rrg_logo.png",
+    title: "Timber Tickler 6N Replacement Parts",
+    description: "Replacement part listing for the Timber Tickler 6N.",
+    image: "../assets/images/6nassy.png",
     manual: "../assets/docs/Rocket-Reel-Manual.pdf",
     etsy: "https://www.etsy.com/listing/YOUR-ROCKET-REEL-HARDWARE-KIT-LINK",
     search: "rocket reel hardware kit replacement screws fasteners etsy manual"
