@@ -187,7 +187,7 @@ const productsData = [
   },
   {
     title: "Hydro Hanger",
-    description: "A lightweight hydration station that clips to belts, packs, or hammocks and lets you drink directly from a Smartwater bottle with or without a hose.",
+    description: "A lightweight hydration station that clips to belts, packs, or hammocks and lets you drink directly from a Smartwater bottle with or without an extended hose.",
     image: "../assets/images/hydrohanger.png",
     manual: "#",
     parts: "#",
