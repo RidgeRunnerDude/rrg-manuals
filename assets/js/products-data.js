@@ -134,13 +134,115 @@ const productsData = [
     etsy: "https://www.etsy.com/listing/YOUR-TACKLE-TOTER-S7C-LINK",
     search: "tackle toter s7c manual parts etsy"
   },
-{
+  {
     title: "Tack Rack",
     description: "A lightweight tackle mount that clips your Tackle Toter onto chairs, poles, or rails for easy access while you fish.",
     image: "../assets/images/tackrack.png",
     manual: "../assets/docs/Tack-Rack-Manual.pdf",
     parts: "../parts/",
-    etsy: "https://www.etsy.com/listing/YOUR-TACKLE-TOTER-S7C-LINK",
+    etsy: "https://www.etsy.com/listing/YOUR-TACK-RACK-LINK",
     search: "tack rack manual parts etsy"
+  },
+
+  // Coming Soon
+  {
+    title: "Cap Light Caddy",
+    description: "A compact trail-ready holder built to keep your cap light secure, handy, and easy to position when the sun quits early.",
+    image: "../assets/images/caplightcaddy.png",
+    manual: "#",
+    parts: "#",
+    etsy: "#",
+    search: "cap light caddy coming soon prototype",
+    comingSoon: true
+  },
+  {
+    title: "Hikers Hotspot",
+    description: "A comfort-minded camp accessory designed to make trail stops and backwoods setup a little more civilized.",
+    image: "../assets/images/HikersHotspot.png",
+    manual: "#",
+    parts: "#",
+    etsy: "#",
+    search: "hikers hotspot coming soon prototype",
+    comingSoon: true
+  },
+  {
+    title: "Hydro Hanger",
+    description: "A lightweight utility mount built to keep hydration gear organized, accessible, and off the ground around camp.",
+    image: "../assets/images/hydrohanger.png",
+    manual: "#",
+    parts: "#",
+    etsy: "#",
+    search: "hydro hanger coming soon prototype",
+    comingSoon: true
+  },
+  {
+    title: "Lantern Latcher",
+    description: "A simple camp-light mounting solution designed to keep your lantern secure and right where you need it after dark.",
+    image: "../assets/images/lanternlatcher.png",
+    manual: "#",
+    parts: "#",
+    etsy: "#",
+    search: "lantern latcher coming soon prototype",
+    comingSoon: true
+  },
+  {
+    title: "Ridge Rack Double Line Mount",
+    description: "A dual-line Ridge Rack accessory built to keep more gear supported, organized, and ready for action.",
+    image: "../assets/images/rrdoubleline.png",
+    manual: "#",
+    parts: "#",
+    etsy: "#",
+    search: "ridge rack double line mount coming soon prototype",
+    comingSoon: true
+  },
+  {
+    title: "Ridge Rack Monopod",
+    description: "A versatile Ridge Rack accessory designed to add stable support for cameras, optics, or field-use attachments.",
+    image: "../assets/images/rrmonopod.png",
+    manual: "#",
+    parts: "#",
+    etsy: "#",
+    search: "ridge rack monopod coming soon prototype",
+    comingSoon: true
+  },
+  {
+    title: "Ridge Rack Phone Holder",
+    description: "A secure mounting accessory built to keep your phone visible, protected, and easy to reach in the field.",
+    image: "../assets/images/rrphoneholder.png",
+    manual: "#",
+    parts: "#",
+    etsy: "#",
+    search: "ridge rack phone holder coming soon prototype",
+    comingSoon: true
+  },
+  {
+    title: "Ridge Rack Pole Mount",
+    description: "A practical Ridge Rack attachment made to lock onto poles and rails for flexible setup wherever camp takes you.",
+    image: "../assets/images/rrpole.png",
+    manual: "#",
+    parts: "#",
+    etsy: "#",
+    search: "ridge rack pole mount coming soon prototype",
+    comingSoon: true
+  },
+  {
+    title: "Ridge Rack Single Line Mount",
+    description: "A streamlined line-mount accessory built for simple, reliable support without adding unnecessary bulk.",
+    image: "../assets/images/rrsingleline.png",
+    manual: "#",
+    parts: "#",
+    etsy: "#",
+    search: "ridge rack single line mount coming soon prototype",
+    comingSoon: true
+  },
+  {
+    title: "Tiny Tunes Trekker",
+    description: "A compact trail companion designed to bring a little sound, fun, and camp personality without weighing down your pack.",
+    image: "../assets/images/tinytunestrekker.png",
+    manual: "#",
+    parts: "#",
+    etsy: "#",
+    search: "tiny tunes trekker coming soon prototype",
+    comingSoon: true
   }
 ];
