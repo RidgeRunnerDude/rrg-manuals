@@ -58,7 +58,7 @@ const partsData = [
   {
     title: "Yak Rack",
     description: "Replacement part listing for the Yak Rack.",
-    image: "../assets/images/YakRack.png",
+    image: "../assets/images/yakrackassy.png",
     manual: "../assets/docs/Yak-Rack-Manual.pdf",
     etsy: "https://www.etsy.com/listing/YOUR-YAK-RACK-PART-LINK",
     search: "yak rack replacement part etsy manual"
@@ -74,7 +74,7 @@ const partsData = [
   {
     title: "Blaster Master",
     description: "Replacement part listing for the Blaster Master.",
-    image: "../assets/images/BlasterMaster.png",
+    image: "../assets/images/blastermasterassy.png",
     manual: "../assets/docs/Blaster-Master-Manual.pdf",
     etsy: "https://www.etsy.com/listing/YOUR-BLASTER-MASTER-PART-LINK",
     search: "blaster master replacement part etsy manual"
