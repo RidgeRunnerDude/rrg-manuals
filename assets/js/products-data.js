@@ -156,6 +156,26 @@ const productsData = [
     comingSoon: true
   },
   {
+    title: "Ridge Rack 3.25 Cup Holder",
+    description: "A compact trail-ready holder built to keep your cap light secure, handy, and easy to position when the sun quits early.",
+    image: "../assets/images/325cupholder.png",
+    manual: "#",
+    parts: "#",
+    etsy: "#",
+    search: "3.25 cup holder coming soon prototype",
+    comingSoon: true
+  },
+  {
+    title: "Ridge Rack 4.0 Cup Holder",
+    description: "A compact trail-ready holder built to keep your cap light secure, handy, and easy to position when the sun quits early.",
+    image: "../assets/images/4cupholder.png",
+    manual: "#",
+    parts: "#",
+    etsy: "#",
+    search: "3.25 cup holder coming soon prototype",
+    comingSoon: true
+  },
+  {
     title: "Hikers Hotspot",
     description: "A comfort-minded camp accessory designed to make trail stops and backwoods setup a little more civilized.",
     image: "../assets/images/HikersHotspot.png",
