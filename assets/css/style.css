@@ -24,7 +24,6 @@ body {
   background-attachment: fixed;
 }
 
-
 /* ===============================
    LAYOUT
 ================================ */
@@ -34,7 +33,6 @@ body {
   margin: 0 auto;
   padding: 24px;
 }
-
 
 /* ===============================
    HEADER
@@ -64,7 +62,7 @@ body {
   font-size: 2.5rem;
   line-height: 1.1;
   letter-spacing: 1px;
-  color: #fff;
+  color: #ffffff;
 }
 
 .page-intro,
@@ -81,7 +79,6 @@ body {
   font-size: 0.95rem;
   color: rgba(255, 255, 255, 0.75);
 }
-
 
 /* ===============================
    NAVIGATION
@@ -104,7 +101,7 @@ body {
   border-radius: 12px;
   text-decoration: none;
   font-weight: 600;
-  color: #fff;
+  color: #ffffff;
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.15);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
@@ -119,9 +116,8 @@ body {
 
 .top-nav a.active {
   border-color: #e0c38c;
-  box-shadow: 0 0 0 1px rgba(224, 195, 140, 0.4);
+  box-shadow: 0 0 0 1px rgba(224, 195, 140, 0.35);
 }
-
 
 /* ===============================
    SEARCH BAR
@@ -138,7 +134,7 @@ body {
   border-radius: 14px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   background: rgba(255, 255, 255, 0.10);
-  color: #fff;
+  color: #ffffff;
   font-size: 15px;
   outline: none;
   backdrop-filter: blur(6px);
@@ -152,7 +148,6 @@ body {
 .search-input::placeholder {
   color: #d2d2d2;
 }
-
 
 /* ===============================
    HERO BANNER
@@ -205,17 +200,17 @@ body {
   border-radius: 10px;
   text-decoration: none;
   font-weight: bold;
-  transition: 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .hero-btn.primary {
   background: #e0c38c;
-  color: #000;
+  color: #000000;
 }
 
 .hero-btn.secondary {
   background: rgba(255, 255, 255, 0.08);
-  color: #fff;
+  color: #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -223,7 +218,6 @@ body {
   transform: translateY(-1px);
   opacity: 0.95;
 }
-
 
 /* ===============================
    HERO SPOTLIGHT
@@ -244,14 +238,14 @@ body {
 }
 
 .hero-spotlight-text h2 {
-  font-size: 2rem;
   margin: 6px 0 10px;
+  font-size: 2rem;
 }
 
 .hero-spotlight-text p {
+  max-width: 650px;
   color: #e2ddd3;
   line-height: 1.6;
-  max-width: 650px;
 }
 
 .eyebrow {
@@ -278,17 +272,36 @@ body {
   background: rgba(255, 255, 255, 0.04);
 }
 
-
 /* ===============================
-   FEATURED / ABOUT PREVIEW
+   ABOUT / FEATURED SECTIONS
 ================================ */
 
-.about-preview {
+.about-preview,
+.founder-note,
+.bookmark-callout,
+.field-lab,
+.coming-gear {
   margin-top: 60px;
-  padding: 30px;
-  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.about-preview,
+.founder-note,
+.bookmark-callout {
+  padding: 28px 30px;
   border-radius: 16px;
   background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.founder-note h2,
+.about-preview h2 {
+  margin-top: 0;
+}
+
+.founder-note p:last-child,
+.about-preview p:last-child {
+  margin-bottom: 0;
 }
 
 .learn-more-btn {
@@ -296,26 +309,41 @@ body {
   margin-top: 15px;
   padding: 10px 18px;
   background: #e0c38c;
-  color: #000;
+  color: #000000;
   text-decoration: none;
   font-weight: bold;
   border-radius: 8px;
+  transition: all 0.2s ease;
 }
 
 .learn-more-btn:hover {
   opacity: 0.9;
+  transform: translateY(-1px);
 }
-
 
 /* ===============================
    GRID LAYOUT
 ================================ */
 
 .hero-grid,
-.card-grid {
+.card-grid,
+.field-lab-grid,
+.coming-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 20px;
+}
+
+.hero-grid,
+.card-grid {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.field-lab-grid {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.coming-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
 .hero-grid {
@@ -326,58 +354,56 @@ body {
   margin-top: 24px;
 }
 
-
 /* ===============================
    CARDS
 ================================ */
+
+.card,
+.manual-card,
+.lab-step,
+.coming-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 18px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.40);
+}
+
+.card,
+.manual-card,
+.lab-step {
+  padding: 20px;
+}
 
 .card {
   display: flex;
   flex-direction: column;
   height: 100%;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 18px;
-  padding: 20px;
-  backdrop-filter: blur(6px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.40);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.card:hover {
+.card:hover,
+.lab-step:hover,
+.coming-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.55);
 }
 
 .card h2,
-.card h3 {
-  margin-top: 0;
-  color: #fff;
-}
-
-.card p {
-  color: #ddd;
-  line-height: 1.55;
-}
-
-.manual-card {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 16px;
-  padding: 24px;
-  backdrop-filter: blur(6px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.30);
-}
-
+.card h3,
 .manual-card h2,
-.manual-card h3 {
+.manual-card h3,
+.lab-step h3 {
   margin-top: 0;
-  color: #fff;
+  color: #ffffff;
 }
 
-.manual-card p {
-  color: #ddd;
-  line-height: 1.6;
+.card p,
+.manual-card p,
+.lab-step p,
+.coming-card {
+  color: #dddddd;
+  line-height: 1.55;
 }
 
 .manual-button {
@@ -389,7 +415,7 @@ body {
   text-decoration: none;
   font-weight: bold;
   background: #e0c38c;
-  color: #000;
+  color: #000000;
   transition: all 0.15s ease;
 }
 
@@ -397,7 +423,6 @@ body {
   transform: translateY(-1px);
   opacity: 0.92;
 }
-
 
 /* ===============================
    PRODUCT CARDS
@@ -408,6 +433,7 @@ body {
 }
 
 .product-image-wrap {
+  position: relative;
   width: 100%;
   height: 190px;
   margin-bottom: 16px;
@@ -438,6 +464,86 @@ body {
   flex-grow: 1;
 }
 
+.coming-soon-card {
+  opacity: 0.97;
+}
+
+/* ===============================
+   PROTOTYPE / COMING SOON
+================================ */
+
+.prototype-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(20, 20, 20, 0.88);
+  border: 1px solid #d3a34b;
+  color: #f5f1e8;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+}
+
+.coming-soon-label {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 8px;
+  background: #444444;
+  border: 1px solid #d3a34b;
+  color: #f5f1e8;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.coming-gear {
+  text-align: center;
+}
+
+.coming-gear h2,
+.field-lab h2 {
+  margin-bottom: 10px;
+}
+
+.coming-intro,
+.field-lab-intro {
+  max-width: 760px;
+  margin: 0 auto 30px;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.coming-card {
+  padding: 25px;
+  font-weight: 600;
+  opacity: 0.9;
+  border-style: dashed;
+  transition: all 0.2s ease;
+}
+
+.coming-card:hover {
+  border-color: #d3a34b;
+  opacity: 1;
+}
+
+/* ===============================
+   WORKSHOP / FIELD LAB
+================================ */
+
+.field-lab {
+  text-align: center;
+}
+
+.lab-step img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 14px;
+  border-radius: 14px;
+}
 
 /* ===============================
    BUTTONS
@@ -470,34 +576,32 @@ body {
 
 .btn-etsy {
   background: #f1641e;
-  color: #fff;
+  color: #ffffff;
 }
 
 .btn-manual {
   background: #5b5b5b;
-  color: #fff;
+  color: #ffffff;
 }
 
 .btn-parts {
   background: #2d6a4f;
-  color: #fff;
+  color: #ffffff;
 }
 
 .btn-home {
   background: #7b5e3b;
-  color: #fff;
+  color: #ffffff;
 }
-
 
 /* ===============================
    SECTION TITLES
 ================================ */
 
 .section-title {
-  font-size: 1.6rem;
   margin: 40px 0 15px;
+  font-size: 1.6rem;
 }
-
 
 /* ===============================
    MANUAL LIST
@@ -509,34 +613,11 @@ body {
 }
 
 .manual-item {
-  background: rgba(255, 255, 255, 0.08);
-  border-radius: 12px;
   padding: 16px;
+  background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
 }
-
-
-/* ===============================
-   FOUNDER NOTE
-================================ */
-
-.founder-note {
-  margin-top: 40px;
-  padding: 28px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 16px;
-  background: rgba(0, 0, 0, 0.35);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
-}
-
-.founder-note h2 {
-  margin-top: 0;
-}
-
-.founder-note p:last-child {
-  margin-bottom: 0;
-}
-
 
 /* ===============================
    SEARCH FILTER
@@ -545,7 +626,6 @@ body {
 .hidden-card {
   display: none !important;
 }
-
 
 /* ===============================
    FOOTER
@@ -557,7 +637,6 @@ footer {
   color: #d6d6d6;
   font-size: 14px;
 }
-
 
 /* ===============================
    TABLET / SMALL DESKTOP
@@ -577,7 +656,6 @@ footer {
     justify-content: center;
   }
 }
-
 
 /* ===============================
    MOBILE
@@ -602,6 +680,10 @@ footer {
     padding: 10px 14px;
   }
 
+  .search-wrap {
+    margin-top: 22px;
+  }
+
   .product-image-wrap {
     height: 160px;
   }
@@ -613,5 +695,15 @@ footer {
   .hero-banner h2,
   .hero-spotlight-text h2 {
     font-size: 1.6rem;
+  }
+
+  .button-row {
+    gap: 8px;
+  }
+
+  .btn,
+  .coming-soon-label {
+    font-size: 13px;
+    padding: 9px 14px;
   }
 }

@@ -47,11 +47,31 @@
   <script src="../assets/js/products-data.js"></script>
   <script>
     const productsGrid = document.getElementById("productsGrid");
+    const searchInput = document.getElementById("siteSearch");
 
     function buildProductCard(product) {
+      const buttonsHtml = product.comingSoon
+        ? `
+          <div class="button-row">
+            <span class="coming-soon-label">Coming Soon</span>
+          </div>
+        `
+        : `
+          <div class="button-row">
+            <a class="btn btn-manual" href="${product.manual}" target="_blank">Manual</a>
+            <a class="btn btn-parts" href="${product.parts}">Parts</a>
+            <a class="btn btn-etsy" href="${product.etsy}" target="_blank">Buy on Etsy</a>
+          </div>
+        `;
+
+      const prototypeBadge = product.comingSoon
+        ? `<div class="prototype-badge">Prototype</div>`
+        : "";
+
       return `
-        <div class="card product-card" data-search="${product.search}">
+        <div class="card product-card ${product.comingSoon ? "coming-soon-card" : ""}" data-search="${product.search}">
           <div class="product-image-wrap">
+            ${prototypeBadge}
             <img
               src="${product.image}"
               alt="${product.title}"
@@ -62,25 +82,19 @@
           <h3>${product.title}</h3>
           <p>${product.description}</p>
 
-          <div class="button-row">
-            <a class="btn btn-manual" href="${product.manual}" target="_blank">Manual</a>
-            <a class="btn btn-parts" href="${product.parts}">Parts</a>
-            <a class="btn btn-etsy" href="${product.etsy}" target="_blank">Buy on Etsy</a>
-          </div>
+          ${buttonsHtml}
         </div>
       `;
     }
 
     productsGrid.innerHTML = productsData.map(buildProductCard).join("");
 
-    const searchInput = document.getElementById("siteSearch");
-
     searchInput.addEventListener("input", () => {
       const query = searchInput.value.trim().toLowerCase();
       const items = document.querySelectorAll(".product-card");
 
       items.forEach(item => {
-        const text = item.getAttribute("data-search").toLowerCase();
+        const text = (item.getAttribute("data-search") || "").toLowerCase();
         const title = item.querySelector("h3").textContent.toLowerCase();
         const match = text.includes(query) || title.includes(query);
         item.classList.toggle("hidden-card", !match);
