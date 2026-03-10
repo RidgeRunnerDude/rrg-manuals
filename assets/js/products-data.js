@@ -147,7 +147,7 @@ const productsData = [
   // Coming Soon
   {
     title: "Cap Light Caddy",
-    description: "A compact trail-ready holder built to keep your cap light secure, handy, and easy to position when the sun quits early.",
+    description: "A clever little mount that turns your Nitecore NU25 into a cap light, hanging lantern, or flat map light for camp and trail use.",
     image: "../assets/images/caplightcaddy.png",
     manual: "#",
     parts: "#",
@@ -157,7 +157,7 @@ const productsData = [
   },
   {
     title: "Ridge Rack 3.25 Cup Holder",
-    description: "A compact trail-ready holder built to keep your cap light secure, handy, and easy to position when the sun quits early.",
+    description: "A compact cup holder that mounts to chairs, round surfaces, or the Yak Rack to securely hold cups or bottles up to 3.25 inches in diameter.",
     image: "../assets/images/325cupholder.png",
     manual: "#",
     parts: "#",
@@ -167,7 +167,7 @@ const productsData = [
   },
   {
     title: "Ridge Rack 4.0 Cup Holder",
-    description: "A compact trail-ready holder built to keep your cap light secure, handy, and easy to position when the sun quits early.",
+    description: "A compact cup holder that mounts to chairs, round surfaces, or the Yak Rack to securely hold cups or bottles up to 4.0 inches in diameter.",
     image: "../assets/images/4cupholder.png",
     manual: "#",
     parts: "#",
@@ -177,7 +177,7 @@ const productsData = [
   },
   {
     title: "Hikers Hotspot",
-    description: "A comfort-minded camp accessory designed to make trail stops and backwoods setup a little more civilized.",
+    description: "A lightweight camp table that secures a stove for cooking or warmth, with a cup holder and versatile mounting for trekking poles, trees, or ground use.",
     image: "../assets/images/HikersHotspot.png",
     manual: "#",
     parts: "#",
@@ -187,7 +187,7 @@ const productsData = [
   },
   {
     title: "Hydro Hanger",
-    description: "A lightweight utility mount built to keep hydration gear organized, accessible, and off the ground around camp.",
+    description: "A lightweight hydration station that clips to belts, packs, or hammocks and lets you drink directly from a Smartwater bottle with or without a hose.",
     image: "../assets/images/hydrohanger.png",
     manual: "#",
     parts: "#",
@@ -197,7 +197,7 @@ const productsData = [
   },
   {
     title: "Lantern Latcher",
-    description: "A simple camp-light mounting solution designed to keep your lantern secure and right where you need it after dark.",
+    description: "A lightweight mount that attaches a Nitecore NU25 to a Smartwater bottle to create a portable lantern with adjustable light direction.",
     image: "../assets/images/lanternlatcher.png",
     manual: "#",
     parts: "#",
@@ -207,7 +207,7 @@ const productsData = [
   },
   {
     title: "Ridge Rack Double Line Mount",
-    description: "A dual-line Ridge Rack accessory built to keep more gear supported, organized, and ready for action.",
+    description: "A lightweight mount for hammocks with double ridge lines that holds a phone or fan and works within the modular Ridge Rack system for versatile setups.",
     image: "../assets/images/rrdoubleline.png",
     manual: "#",
     parts: "#",
@@ -217,7 +217,7 @@ const productsData = [
   },
   {
     title: "Ridge Rack Monopod",
-    description: "A versatile Ridge Rack accessory designed to add stable support for cameras, optics, or field-use attachments.",
+    description: "A super lightweight mount that attaches a phone to a trekking pole and converts it into a stable guyline-supported monopod.",
     image: "../assets/images/rrmonopod.png",
     manual: "#",
     parts: "#",
@@ -227,7 +227,7 @@ const productsData = [
   },
   {
     title: "Ridge Rack Phone Holder",
-    description: "A secure mounting accessory built to keep your phone visible, protected, and easy to reach in the field.",
+    description: "A lightweight phone mount that attaches to chairs or round poles and uses a bungee strap to securely hold your phone while collapsing for easy carry.",
     image: "../assets/images/rrphoneholder.png",
     manual: "#",
     parts: "#",
@@ -237,7 +237,7 @@ const productsData = [
   },
   {
     title: "Ridge Rack Pole Mount",
-    description: "A practical Ridge Rack attachment made to lock onto poles and rails for flexible setup wherever camp takes you.",
+    description: "A lightweight pole mount that secures a phone or fan to chairs, tent poles, or round surfaces as part of the modular Ridge Rack system.",
     image: "../assets/images/rrpole.png",
     manual: "#",
     parts: "#",
@@ -247,7 +247,7 @@ const productsData = [
   },
   {
     title: "Ridge Rack Single Line Mount",
-    description: "A streamlined line-mount accessory built for simple, reliable support without adding unnecessary bulk.",
+    description: "A lightweight mount for hammocks with single ridge lines that holds a phone or fan and works within the modular Ridge Rack system for versatile setups.",
     image: "../assets/images/rrsingleline.png",
     manual: "#",
     parts: "#",
@@ -257,7 +257,7 @@ const productsData = [
   },
   {
     title: "Tiny Tunes Trekker",
-    description: "A compact trail companion designed to bring a little sound, fun, and camp personality without weighing down your pack.",
+    description: "A compact Bluetooth speaker that mounts to hammock ridge lines or flat surfaces for music or nighttime white noise at camp.",
     image: "../assets/images/tinytunestrekker.png",
     manual: "#",
     parts: "#",
