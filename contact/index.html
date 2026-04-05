@@ -271,6 +271,11 @@
           </p>
         </div>
 
+        <div id="success-message" style="display:none; text-align:center; margin-bottom:20px; padding:15px; border-radius:10px; background:#1e2b1e; border:1px solid #4caf50;">
+          <strong>Thanks for reaching out!</strong><br>
+          Your message has been sent to Ridge Runner Gear.
+        </div>
+
         <div class="form-box">
           <h3>Send a Message</h3>
           <form action="https://formspree.io/f/xkoppewd" method="POST">
@@ -289,6 +294,11 @@
               <textarea id="message" name="message" required></textarea>
             </div>
 
+            <input type="hidden" name="_subject" value="Ridge Runner Gear Website Inquiry">
+            <input type="text" name="_gotcha" style="display:none">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://rrgruntheridge.com/contact/?success=true">
+
             <button type="submit" class="button">Send Message</button>
           </form>
         </div>
@@ -297,5 +307,12 @@
       <p class="footer-note">Run the Ridge.</p>
     </section>
   </div>
+
+<script>
+if (window.location.search.includes("success=true")) {
+  document.getElementById("success-message").style.display = "block";
+}
+</script>
+
 </body>
 </html>
