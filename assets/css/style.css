@@ -708,9 +708,12 @@ main {
 }
 
 .manual-promo {
-  margin-top: 8px;
+  margin: 8px auto 0;
+  max-width: 950px;
+  text-align: center;
   font-style: italic;
   opacity: 0.9;
+  line-height: 1.5;
 }
 
 /* ===============================
