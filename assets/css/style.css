@@ -977,6 +977,28 @@ footer {
     transition: color 0.2s ease;
 }
 
+.contact-text a:visited {
+    color: #f4a742;
+}
+
 .contact-text a:hover {
     text-decoration: underline;
+}
+
+.contact-text p {
+    margin-bottom: 18px;
+}
+
+.contact-card {
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 18px;
+    padding: 40px 30px;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.contact-card:hover {
+    box-shadow: 0 0 25px rgba(244,167,66,0.15);
 }
