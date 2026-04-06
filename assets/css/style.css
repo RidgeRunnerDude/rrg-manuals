@@ -964,3 +964,19 @@ footer {
 .site-footer p {
   margin-bottom: 8px;
 }
+
+/* ===============================
+   CONTACT
+================================ */
+
+/* Contact page link styling */
+.contact-text a {
+    color: #f4a742;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.contact-text a:hover {
+    text-decoration: underline;
+}
