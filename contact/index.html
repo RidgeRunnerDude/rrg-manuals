@@ -85,14 +85,19 @@
     }
 
     .contact-card {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 40px 28px;
+      background: rgba(0, 0, 0, 0.55);
+      backdrop-filter: blur(6px);
+      border: 1px solid rgba(255,255,255,0.08);
       border-radius: 28px;
-      background: rgba(15, 15, 15, 0.74);
-      border: 1px solid rgba(255, 191, 94, 0.22);
-      box-shadow: 0 20px 40px rgba(0,0,0,0.28);
+      padding: 40px 30px;
+      max-width: 900px;
+      margin: 40px auto;
       text-align: left;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .contact-card:hover {
+      box-shadow: 0 0 25px rgba(244,167,66,0.15);
     }
 
     .eyebrow {
@@ -107,16 +112,39 @@
     .contact-card h2 {
       text-align: center;
       font-size: clamp(2rem, 4vw, 3.2rem);
-      margin-bottom: 14px;
+      margin-bottom: 20px;
     }
 
-    .intro {
-      max-width: 720px;
-      margin: 0 auto 30px;
+    .contact-text {
+      max-width: 760px;
+      margin: 0 auto 28px;
       text-align: center;
-      font-size: 1.08rem;
-      line-height: 1.7;
+      line-height: 1.6;
+      font-size: 1.1rem;
       color: #f0f0f0;
+    }
+
+    .contact-text p {
+      margin-bottom: 18px;
+    }
+
+    .contact-text p:first-child {
+      font-size: 1.15rem;
+    }
+
+    .contact-text a {
+      color: #f4a742;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.2s ease;
+    }
+
+    .contact-text a:visited {
+      color: #f4a742;
+    }
+
+    .contact-text a:hover {
+      text-decoration: underline;
     }
 
     .contact-grid {
@@ -230,6 +258,10 @@
       .nav a {
         min-width: 130px;
       }
+
+      .contact-card {
+        padding: 32px 20px;
+      }
     }
   </style>
 </head>
@@ -240,37 +272,37 @@
     <h1>Ridge Runner Gear</h1>
     <p class="subtitle">American-made outdoor gear engineered for comfort, capability, and real-world adventure.</p>
 
-      <nav class="nav">
-        <a href="../">Home</a>
-        <a href="../products/">Products</a>
-        <a href="../parts/">Replacement Parts</a>
-        <a href="../manuals/">Manuals</a>
-        <a href="../about/">About</a>
-        <a href="../contact/" class="active">Contact</a>
-      </nav>
+    <nav class="nav">
+      <a href="../">Home</a>
+      <a href="../products/">Products</a>
+      <a href="../parts/">Replacement Parts</a>
+      <a href="../manuals/">Manuals</a>
+      <a href="../about/">About</a>
+      <a href="../contact/" class="active">Contact</a>
+    </nav>
 
-   <section class="contact-card">
-  <div class="eyebrow">GET IN TOUCH</div>
-  <h2>Contact Ridge Runner Gear</h2>
+    <section class="contact-card">
+      <div class="eyebrow">GET IN TOUCH</div>
+      <h2>Contact Ridge Runner Gear</h2>
 
-  <div class="contact-text">
-    <p>
-      Questions about gear, replacement parts, Etsy orders, or figuring out which setup fits your adventure best?
-      Send a message and it goes straight to the guy designing the gear.
-    </p>
+      <div class="contact-text">
+        <p>
+          Questions about gear, replacement parts, Etsy orders, or figuring out which setup fits your adventure best?
+          Send a message and it goes straight to the guy designing the gear.
+        </p>
 
-    <p>
-      Ridge Runner Gear is designed for real-world adventure. If something isn’t working right, let us know and we’ll help get it sorted out.
-    </p>
+        <p>
+          Ridge Runner Gear is designed for real-world adventure. If something isn’t working right, let us know and we’ll help get it sorted out.
+        </p>
 
-    <p>
-      Before sending a message, check the
-      <a href="../manuals/">manuals and troubleshooting section</a> — many common questions are covered there.
-      If you still need help, send us a message through the contact form.
-    </p>
-  </div>
+        <p>
+          Before sending a message, check the
+          <a href="../manuals/">manuals and troubleshooting section</a> — many common questions are covered there.
+          If you still need help, send us a message through the contact form.
+        </p>
+      </div>
 
-  <div class="contact-grid">
+      <div class="contact-grid">
         <div class="info-box">
           <h3>Contact Info</h3>
           <p><strong>Email:</strong><br><a href="mailto:ridgerunnergear@gmail.com">ridgerunnergear@gmail.com</a></p>
@@ -282,11 +314,6 @@
             Ridge Runner Gear is small-batch, Appalachian-built outdoor gear with real-world function in mind.
             That means responses may not be instant, but they’ll be personal.
           </p>
-        </div>
-
-        <div id="success-message" style="display:none; text-align:center; margin-bottom:20px; padding:15px; border-radius:10px; background:#1e2b1e; border:1px solid #4caf50;">
-          <strong>Thanks for reaching out!</strong><br>
-          Your message has been sent to Ridge Runner Gear.
         </div>
 
         <div class="form-box">
