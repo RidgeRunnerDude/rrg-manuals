@@ -707,6 +707,12 @@ main {
   opacity: 0.97;
 }
 
+.manual-promo {
+  margin-top: 8px;
+  font-style: italic;
+  opacity: 0.9;
+}
+
 /* ===============================
    PROTOTYPE / COMING SOON
 ================================ */
