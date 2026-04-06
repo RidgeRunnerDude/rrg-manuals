@@ -970,6 +970,19 @@ footer {
 ================================ */
 
 /* Contact page link styling */
+.contact-text {
+    max-width: 760px;
+    margin: 0 auto 28px;
+    text-align: center;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    color: #f0f0f0;
+}
+
+.contact-text p {
+    margin-bottom: 18px;
+}
+
 .contact-text a {
     color: #f4a742;
     text-decoration: none;
@@ -983,10 +996,6 @@ footer {
 
 .contact-text a:hover {
     text-decoration: underline;
-}
-
-.contact-text p {
-    margin-bottom: 18px;
 }
 
 .contact-card {
