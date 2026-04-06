@@ -6,7 +6,7 @@ const manualsData = [
     search: "blaster master manual pdf"
   },
   {
-    title: "Reel Rack Field Manual",
+    title: "Reel Rack Field Manual ",
     pdf: "../assets/docs/Reel-Rack-Manual.pdf",
     etsy: "https://www.etsy.com/listing/YOUR-REEL-RACK-LINK",
     search: "reel rack manual pdf"
