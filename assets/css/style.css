@@ -1024,4 +1024,37 @@ footer {
 
 .contact-card:hover {
     box-shadow: 0 0 25px rgba(244,167,66,0.15);
+
+/* ================================
+   RIDGE REPORT
+================================= */
+
+.ridge-report {
+  margin-top: 40px;
+  padding: 20px;
+  border: 1px solid #444;
+  border-radius: 8px;
+  background: rgba(0,0,0,0.35);
+  text-align: center;
+}
+
+.ridge-report h2 {
+  margin-top: 0;
+}
+
+.ridge-report a {
+  color: #6cc4ff;
+  text-decoration: none;
+}
+
+.ridge-report a:hover {
+  text-decoration: underline;
+}
+
+.small-note {
+  font-size: 0.85em;
+  opacity: 0.8;
+}
+
+
 }
