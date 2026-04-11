@@ -1077,7 +1077,7 @@ footer {
       color: #ffffff;
       background:
         linear-gradient(rgba(0,0,0,0.72), rgba(0,0,0,0.82)),
-        url('../assets/images/topo-bg.jpg') center center / cover no-repeat fixed;
+        url('../images/topo-bg.jpg') center center / cover no-repeat fixed;
       min-height: 100vh;
     }
 
