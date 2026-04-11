@@ -1043,8 +1043,13 @@ footer {
 }
 
 .ridge-report a {
-  color: #6cc4ff;
+  color: #ffbf5e;
   text-decoration: none;
+  font-weight: 700;
+}
+
+.ridge-report a:visited {
+  color: #ffbf5e;
 }
 
 .ridge-report a:hover {
@@ -1054,7 +1059,4 @@ footer {
 .small-note {
   font-size: 0.85em;
   opacity: 0.8;
-}
-
-
 }
