@@ -1068,15 +1068,17 @@ textarea {
 }
 
 .field-dev-list {
-  display: inline-block;
-  text-align: left;
+  width: fit-content;
+  max-width: 90%;
   margin: 1rem auto;
-  padding-left: 1.2rem;
+  padding-left: 1.25rem;
+  text-align: left;
 }
 
 .field-dev-list li {
   margin-bottom: 0.45rem;
   line-height: 1.5;
+  text-align: left;
 }
 
 /* ===============================
