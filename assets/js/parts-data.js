@@ -13,7 +13,7 @@ const partsData = [
     image: "../assets/images/6nassy.png",
     manual: "../assets/docs/Timber-Tickler-6N-Manual.pdf",
     etsy: "https://www.etsy.com/listing/YOUR-TIMBER-TICKLER-PART-LINK",
-    search: "rocket reel hardware kit replacement screws fasteners etsy manual"
+    search: "timber tickler 6n hardware kit replacement screws fasteners etsy manual"
   },
   {
     title: "Timber Tickler 9N",
@@ -33,7 +33,7 @@ const partsData = [
   },
   {
     title: "Walletül Release",
-    description: "Replacement part listing for the Walletul Release.",
+    description: "Replacement part listing for the Walletül Release.",
     image: "../assets/images/walletulassy.png",
     manual: "../assets/docs/Walletul-Release-Manual.pdf",
     etsy: "https://www.etsy.com/listing/YOUR-WALLETUL-PART-LINK",
@@ -173,8 +173,8 @@ const partsData = [
     image: "../assets/images/tackrackassy.png",
     manual: "../assets/docs/Tack-Rack-Manual.pdf",
     etsy: "https://www.etsy.com/listing/YOUR-TACK-RACK-PART-LINK",
-    search: "tackle toter replacement part etsy manual"
-  }
+    search: "tack rack replacement part etsy manual"
+  },
   {
     title: "Yak Rack",
     description: "Replacement part listing for the Yak Rack.",
