@@ -11,6 +11,60 @@ const manualsData = [
     etsy: "https://www.etsy.com/listing/YOUR-REEL-RACK-LINK",
     search: "reel rack manual pdf"
   },
+{
+    title: "Ridge Rack 3.25 Cup Holder Field Manual",
+    pdf: "../assets/docs/Ridge-Rack-Cup-Holder-3.25-Manual.pdf",
+    etsy: "https://www.etsy.com/listing/YOUR-RIDGE-RACK-3.25-CUP-HOLDER-LINK",
+    search: "ridge rack 3.25 cup holder manual pdf"
+  },
+{
+    title: "Ridge Rack 4.0 Cup Holder Field Manual",
+    pdf: "../assets/docs/Ridge-Rack-Cup-Holder-4.0-Manual.pdf",
+    etsy: "https://www.etsy.com/listing/YOUR-RIDGE-RACK-4.0-CUP-HOLDER-LINK",
+    search: "ridge rack 4.0 cup holder manual pdf"
+  },
+{
+    title: "Ridge Rack Phone Holder Field Manual",
+    pdf: "../assets/docs/Ridge-Rack-Phone-Holder-Manual.pdf",
+    etsy: "https://www.etsy.com/listing/YOUR-RIDGE-RACK-PHONE-HOLDER-LINK",
+    search: "ridge rack phone holder manual pdf"
+  },
+{
+    title: "Ridge Rack Minipod Field Manual",
+    pdf: "../assets/docs/Ridge-Rack-Manual.pdf",
+    etsy: "https://www.etsy.com/listing/YOUR-RIDGE-RACK-MINIPOD-LINK",
+    search: "ridge rack minipod manual pdf"
+  },
+  {
+    title: "Ridge Rack Single Line Field Manual",
+    pdf: "../assets/docs/Ridge-Rack-Manual.pdf",
+    etsy: "https://www.etsy.com/listing/YOUR-RIDGE-RACK-SINGLE-LINE-LINK",
+    search: "ridge rack single line manual pdf"
+  },
+  {
+    title: "Ridge Rack Double Line Field Manual",
+    pdf: "../assets/docs/Ridge-Rack-Manual.pdf",
+    etsy: "https://www.etsy.com/listing/YOUR-RIDGE-RACK-DOUBLE-LINE-LINK",
+    search: "ridge rack double line manual pdf"
+  },
+  {
+    title: "Ridge Rack Universal Mount Field Manual",
+    pdf: "../assets/docs/Ridge-Rack-Manual.pdf",
+    etsy: "https://www.etsy.com/listing/YOUR-RIDGE-RACK-UNIVERSAL-MOUNT-LINK",
+    search: "ridge rack universal mount manual pdf"
+  },
+  {
+    title: "Ridge Rack Pole Mount Field Manual",
+    pdf: "../assets/docs/Ridge-Rack-Manual.pdf",
+    etsy: "https://www.etsy.com/listing/YOUR-RIDGE-RACK-POLE-MOUNT-LINK",
+    search: "ridge rack pole mount manual pdf"
+  },
+  {
+    title: "Ridge Rack Monopod Field Manual",
+    pdf: "../assets/docs/Ridge-Rack-Manual.pdf",
+    etsy: "https://www.etsy.com/listing/YOUR-RIDGE-RACK-MONOPOD-LINK",
+    search: "ridge rack monopod manual pdf"
+  },
   {
     title: "Rocket Reel Field Manual",
     pdf: "../assets/docs/Rocket-Reel-Manual.pdf",
@@ -66,22 +120,10 @@ const manualsData = [
     search: "timber tickler 9n manual pdf"
   },
   {
-    title: "Timber Tickler 9W Field Manual",
-    pdf: "../assets/docs/Timber-Tickler-9W-Manual.pdf",
-    etsy: "https://www.etsy.com/listing/YOUR-TIMBER-TICKLER-9W-LINK",
-    search: "timber tickler 9w manual pdf"
-  },
-  {
     title: "Timber Tickler 12N Field Manual",
     pdf: "../assets/docs/Timber-Tickler-12N-Manual.pdf",
     etsy: "https://www.etsy.com/listing/YOUR-TIMBER-TICKLER-12N-LINK",
     search: "timber tickler 12n manual pdf"
-  },
-  {
-    title: "Timber Tickler 12W Field Manual",
-    pdf: "../assets/docs/Timber-Tickler-12W-Manual.pdf",
-    etsy: "https://www.etsy.com/listing/YOUR-TIMBER-TICKLER-12W-LINK",
-    search: "timber tickler 12w manual pdf"
   },
   {
     title: "Walletül Release Field Manual",

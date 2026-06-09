@@ -71,6 +71,15 @@ const productsData = [
     etsy: "https://www.etsy.com/listing/YOUR-PHONE-HOLDER-LINK",
     search: "ridge rack phone holder manual parts etsy"
   },
+{
+    title: "Ridge Rack Minipod Mount",
+    description: "A lightweight mount for tableops and flat surfaces that holds a phone or fan and works within the modular Ridge Rack system for versatile setups.",
+    image: "../assets/images/minipod.png",
+    manual: "../assets/docs/Ridge-Rack-Manual.pdf",
+    parts: "../parts/",
+    etsy: "https://www.etsy.com/listing/YOUR-RIDGE-RACK-MINPOD-LINK",
+    search: "ridge rack minipod mount manual parts etsy"
+  },
   {
     title: "Ridge Rack Single Line Mount",
     description: "A lightweight mount for hammocks with single ridge lines that holds a phone or fan and works within the modular Ridge Rack system for versatile setups.",
