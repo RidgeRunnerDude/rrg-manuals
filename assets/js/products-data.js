@@ -27,15 +27,6 @@ const productsData = [
     search: "timber tickler 9n manual parts etsy"
   },
   {
-    title: "Timber Tickler 9W",
-    description: "A wide-blade field saw designed for bigger limbs and tougher cutting jobs around camp or on the trail.",
-    image: "../assets/images/9wtimbertickler.png",
-    manual: "../assets/docs/Timber-Tickler-9W-Manual.pdf",
-    parts: "../parts/",
-    etsy: "https://www.etsy.com/listing/YOUR-TIMBER-TICKLER-9W-LINK",
-    search: "timber tickler 9w manual parts etsy"
-  },
-  {
     title: "Timber Tickler 12N",
     description: "A long-reach pruning saw built for thicker branches without sacrificing precision and control.",
     image: "../assets/images/12ntimbertickler.png",
@@ -45,15 +36,6 @@ const productsData = [
     search: "timber tickler 12n manual parts etsy"
   },
   {
-    title: "Timber Tickler 12W",
-    description: "A wide-blade field saw designed to tackle serious branches while still keeping your pack light.",
-    image: "../assets/images/12wtimbertickler.png",
-    manual: "../assets/docs/Timber-Tickler-12W-Manual.pdf",
-    parts: "../parts/",
-    etsy: "https://www.etsy.com/listing/YOUR-TIMBER-TICKLER-12W-LINK",
-    search: "timber tickler 12w manual parts etsy"
-  },
-  {
     title: "Walletül Release",
     description: "A rugged everyday wallet with a self-resetting QuadCam lift system that holds your cards and cash while pulling double duty as a lightweight pocket multi-tool.",
     image: "../assets/images/walletul.png",
@@ -61,6 +43,15 @@ const productsData = [
     parts: "../parts/",
     etsy: "https://www.etsy.com/listing/YOUR-WALLETUL-LINK",
     search: "walletul walletül release manual parts etsy"
+  },
+  {
+    title: "Ridge Rack Single Line Mount",
+    description: "A lightweight mount for hammocks with single ridge lines that holds a phone or fan and works within the modular Ridge Rack system for versatile setups.",
+    image: "../assets/images/rrsingleline.png",
+    manual: "../assets/docs/Ridge-Rack-Manual.pdf",
+    parts: "../parts/",
+    etsy: "https://www.etsy.com/listing/YOUR-RIDGE-RACK-SINGLE-LINE-LINK",
+    search: "ridge rack single line mount manual parts etsy"
   },
   {
     title: "Yak Rack",
@@ -183,16 +174,6 @@ const productsData = [
     parts: "#",
     etsy: "#",
     search: "hikers hotspot coming soon prototype",
-    comingSoon: true
-  },
-  {
-    title: "Hydro Hanger",
-    description: "A lightweight hydration station that clips to belts, packs, or hammocks and lets you drink directly from a Smartwater bottle with or without an extended hose.",
-    image: "../assets/images/hydrohanger.png",
-    manual: "#",
-    parts: "#",
-    etsy: "#",
-    search: "hydro hanger coming soon prototype",
     comingSoon: true
   },
   {
