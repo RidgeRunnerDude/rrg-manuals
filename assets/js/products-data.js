@@ -45,6 +45,33 @@ const productsData = [
     search: "walletul walletül release manual parts etsy"
   },
   {
+    title: "Ridge Rack 3.25 Cup Holder",
+    description: "A compact cup holder that mounts to chairs, odd shapes, or the Yak Rack to securely hold cups or bottles up to 3.25 inches in diameter.",
+    image: "../assets/images/325cupholder.png",
+    manual: "../assets/docs/Ridge-Rack-Cup-Holder-3.25-Manual.pdf",
+    parts: "../parts/",
+    etsy: "https://www.etsy.com/listing/YOUR-325-CUP-HOLDER-LINK",
+    search: "3.25 cup holder manual parts etsy"
+  },
+  {
+    title: "Ridge Rack 4.0 Cup Holder",
+    description: "A compact cup holder that mounts to chairs, odd shapes, or the Yak Rack to securely hold cups or bottles up to 4.0 inches in diameter.",
+    image: "../assets/images/4cupholder.png",
+    manual: "../assets/docs/Ridge-Rack-Cup-Holder-4.0-Manual.pdf",
+    parts: "../parts/",
+    etsy: "https://www.etsy.com/listing/YOUR-4-CUP-HOLDER-LINK",
+    search: "4.00 cup holder manual parts etsy"
+  },
+  {
+    title: "Ridge Rack Phone Holder",
+    description: "A lightweight phone mount that attaches to chairs or odd shapes and uses a bungee strap to securely hold your phone while collapsing for easy carry.",
+    image: "../assets/images/rrphoneholder.png",
+    manual: "../assets/docs/Ridge-Rack-Phone-Holder-Manual.pdf",
+    parts: "../parts/",
+    etsy: "https://www.etsy.com/listing/YOUR-PHONE-HOLDER-LINK",
+    search: "ridge rack phone holder manual parts etsy"
+  },
+  {
     title: "Ridge Rack Single Line Mount",
     description: "A lightweight mount for hammocks with single ridge lines that holds a phone or fan and works within the modular Ridge Rack system for versatile setups.",
     image: "../assets/images/rrsingleline.png",
@@ -52,6 +79,42 @@ const productsData = [
     parts: "../parts/",
     etsy: "https://www.etsy.com/listing/YOUR-RIDGE-RACK-SINGLE-LINE-LINK",
     search: "ridge rack single line mount manual parts etsy"
+  },
+  {
+    title: "Ridge Rack Double Line Mount",
+    description: "A lightweight mount for hammocks with double ridge lines that holds a phone or fan and works within the modular Ridge Rack system for versatile setups.",
+    image: "../assets/images/rrdoubleline.png",
+    manual: "../assets/docs/Ridge-Rack-Manual.pdf",
+    parts: "../parts/",
+    etsy: "https://www.etsy.com/listing/YOUR-RIDGE-RACK-DOUBLE-LINE-LINK",
+    search: "ridge rack double line mount manual parts etsy"
+  },
+ {
+    title: "Ridge Rack Universal Mount",
+    description: "A lightweight universal mount that secures a phone or fan to chairs, tent poles, or odd shaped surfaces as part of the modular Ridge Rack system.",
+    image: "../assets/images/universal_mount.png",
+    manual: "../assets/docs/Ridge-Rack-Manual.pdf",
+    parts: "../parts/",
+    etsy: "https://www.etsy.com/listing/YOUR-RIDGE-RACK-UNIVERSAL-MOUNT-LINK",
+    search: "ridge rack universal mount manual parts etsy"
+  },
+ {
+    title: "Ridge Rack Pole Mount",
+    description: "A lightweight pole mount that secures a phone or fan to chairs, tent poles, or round surfaces as part of the modular Ridge Rack system.",
+    image: "../assets/images/rrpole.png",
+    manual: "../assets/docs/Ridge-Rack-Manual.pdf",
+    parts: "../parts/",
+    etsy: "https://www.etsy.com/listing/YOUR-RIDGE-RACK-POLE-MOUNT-LINK",
+    search: "ridge rack pole mount manual parts etsy"
+  },
+  {
+    title: "Ridge Rack Monopod",
+    description: "A super lightweight mount that attaches a phone to a trekking pole and converts it into a stable guyline-supported monopod.",
+    image: "../assets/images/rrmonopod.png",
+    manual: "../assets/docs/Ridge-Rack-Manual.pdf",
+    parts: "../parts/",
+    etsy: "https://www.etsy.com/listing/YOUR-RIDGE-RACK-MONOPOD-LINK",
+    search: "ridge rack monopod manual parts etsy"
   },
   {
     title: "Yak Rack",
@@ -147,26 +210,6 @@ const productsData = [
     comingSoon: true
   },
   {
-    title: "Ridge Rack 3.25 Cup Holder",
-    description: "A compact cup holder that mounts to chairs, round surfaces, or the Yak Rack to securely hold cups or bottles up to 3.25 inches in diameter.",
-    image: "../assets/images/325cupholder.png",
-    manual: "#",
-    parts: "#",
-    etsy: "#",
-    search: "3.25 cup holder coming soon prototype",
-    comingSoon: true
-  },
-  {
-    title: "Ridge Rack 4.0 Cup Holder",
-    description: "A compact cup holder that mounts to chairs, round surfaces, or the Yak Rack to securely hold cups or bottles up to 4.0 inches in diameter.",
-    image: "../assets/images/4cupholder.png",
-    manual: "#",
-    parts: "#",
-    etsy: "#",
-    search: "3.25 cup holder coming soon prototype",
-    comingSoon: true
-  },
-  {
     title: "Hikers Hotspot",
     description: "A lightweight camp table that secures a stove for cooking or warmth, with a cup holder and versatile mounting for trekking poles, trees, or ground use.",
     image: "../assets/images/HikersHotspot.png",
@@ -184,56 +227,6 @@ const productsData = [
     parts: "#",
     etsy: "#",
     search: "lantern latcher coming soon prototype",
-    comingSoon: true
-  },
-  {
-    title: "Ridge Rack Double Line Mount",
-    description: "A lightweight mount for hammocks with double ridge lines that holds a phone or fan and works within the modular Ridge Rack system for versatile setups.",
-    image: "../assets/images/rrdoubleline.png",
-    manual: "#",
-    parts: "#",
-    etsy: "#",
-    search: "ridge rack double line mount coming soon prototype",
-    comingSoon: true
-  },
-  {
-    title: "Ridge Rack Monopod",
-    description: "A super lightweight mount that attaches a phone to a trekking pole and converts it into a stable guyline-supported monopod.",
-    image: "../assets/images/rrmonopod.png",
-    manual: "#",
-    parts: "#",
-    etsy: "#",
-    search: "ridge rack monopod coming soon prototype",
-    comingSoon: true
-  },
-  {
-    title: "Ridge Rack Phone Holder",
-    description: "A lightweight phone mount that attaches to chairs or round poles and uses a bungee strap to securely hold your phone while collapsing for easy carry.",
-    image: "../assets/images/rrphoneholder.png",
-    manual: "#",
-    parts: "#",
-    etsy: "#",
-    search: "ridge rack phone holder coming soon prototype",
-    comingSoon: true
-  },
-  {
-    title: "Ridge Rack Pole Mount",
-    description: "A lightweight pole mount that secures a phone or fan to chairs, tent poles, or round surfaces as part of the modular Ridge Rack system.",
-    image: "../assets/images/rrpole.png",
-    manual: "#",
-    parts: "#",
-    etsy: "#",
-    search: "ridge rack pole mount coming soon prototype",
-    comingSoon: true
-  },
-  {
-    title: "Ridge Rack Single Line Mount",
-    description: "A lightweight mount for hammocks with single ridge lines that holds a phone or fan and works within the modular Ridge Rack system for versatile setups.",
-    image: "../assets/images/rrsingleline.png",
-    manual: "#",
-    parts: "#",
-    etsy: "#",
-    search: "ridge rack single line mount coming soon prototype",
     comingSoon: true
   },
   {
