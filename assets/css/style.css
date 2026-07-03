@@ -1078,6 +1078,55 @@ textarea {
 }
 
 /* ===============================
+   EDDIE VIDEO
+================================ */
+
+.eddie-video-section {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+.eddie-video-section h2 {
+  margin-bottom: 0.5rem;
+}
+
+.eddie-video-section p {
+  max-width: 650px;
+  margin: 0 auto 1.25rem;
+}
+
+.eddie-video-card {
+  position: relative;
+  display: block;
+  max-width: 420px;
+  margin: 0 auto;
+  border-radius: 14px;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.eddie-video-card img {
+  width: 100%;
+  display: block;
+}
+
+.play-button {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 72px;
+  height: 72px;
+  line-height: 72px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.55);
+  color: white;
+  font-size: 34px;
+  text-align: center;
+}
+
+/* ===============================
    RIDGE REPORT
 ================================ */
 
