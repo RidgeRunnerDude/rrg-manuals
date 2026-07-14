@@ -67,47 +67,56 @@
 
   <script src="../assets/js/parts-data.js"></script>
   <script>
-    const partsGrid = document.getElementById("partsGrid");
+  const partsGrid = document.getElementById("partsGrid");
 
-    function buildPartCard(part) {
+  function buildPartCard(part) {
     return `
-    <div class="card product-card" data-search="${part.search}">
+      <div class="card product-card" data-search="${part.search}">
         <img src="${part.image}" alt="${part.title}" />
         <h3>${part.title}</h3>
         <p>${part.description}</p>
 
         <div class="button-row">
-           <a class="btn btn-manual"
-   href="${part.manual}"
-   target="_blank"
-   rel="noopener noreferrer">
-    Field Manual
-</a>
+          <a
+            class="btn btn-manual"
+            href="${part.manual}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Field Manual
+          </a>
 
-${part.etsy ? `
-    <a class="btn btn-etsy"
-       href="${part.etsy}"
-       target="_blank"
-       rel="noopener noreferrer">
-        Buy on Etsy
-    </a>
-` : ""}
+          ${part.etsy ? `
+            <a
+              class="btn btn-etsy"
+              href="${part.etsy}"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Buy on Etsy
+            </a>
+          ` : ""}
+        </div>
+      </div>
+    `;
+  }
 
-    partsGrid.innerHTML = partsData.map(buildPartCard).join("");
+  partsGrid.innerHTML = partsData.map(buildPartCard).join("");
 
-    const searchInput = document.getElementById("siteSearch");
+  const searchInput = document.getElementById("siteSearch");
 
-    searchInput.addEventListener("input", () => {
-      const query = searchInput.value.trim().toLowerCase();
-      const items = document.querySelectorAll(".product-card");
+  searchInput.addEventListener("input", () => {
+    const query = searchInput.value.trim().toLowerCase();
+    const items = document.querySelectorAll(".product-card");
 
-      items.forEach(item => {
-        const text = item.getAttribute("data-search").toLowerCase();
-        const title = item.querySelector("h3").textContent.toLowerCase();
-        const match = text.includes(query) || title.includes(query);
-        item.classList.toggle("hidden-card", !match);
-      });
+    items.forEach(item => {
+      const text = item.getAttribute("data-search").toLowerCase();
+      const title = item.querySelector("h3").textContent.toLowerCase();
+      const match = text.includes(query) || title.includes(query);
+
+      item.classList.toggle("hidden-card", !match);
     });
-  </script>
+  });
+</script>
 </body>
 </html>
