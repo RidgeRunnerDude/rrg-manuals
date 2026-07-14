@@ -89,37 +89,59 @@
   </div>
 
   <script src="../assets/js/manuals-data.js"></script>
-  <script>
-    const manualList = document.getElementById("manualList");
+ <script>
+  const manualList = document.getElementById("manualList");
 
-    function buildManualCard(manual) {
-      return `
-        <div class="manual-item" data-search="${manual.search}">
-          <h3>${manual.title}</h3>
-          <p class="small-note">Open the manual or jump straight to the Etsy listing.</p>
-          <div class="button-row">
-            <a class="btn btn-manual" href="${manual.pdf}" target="_blank">Open PDF</a>
-            <a class="btn btn-etsy" href="${manual.etsy}" target="_blank">Buy on Etsy</a>
-          </div>
+  function buildManualCard(manual) {
+    return `
+      <div class="manual-item" data-search="${manual.search}">
+        <h3>${manual.title}</h3>
+
+        <p class="small-note">
+          Open the manual or jump straight to the Etsy listing.
+        </p>
+
+        <div class="button-row">
+          <a
+            class="btn btn-manual"
+            href="${manual.pdf}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Open PDF
+          </a>
+
+          ${manual.etsy ? `
+            <a
+              class="btn btn-etsy"
+              href="${manual.etsy}"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Buy on Etsy
+            </a>
+          ` : ""}
         </div>
-      `;
-    }
+      </div>
+    `;
+  }
 
-    manualList.innerHTML = manualsData.map(buildManualCard).join("");
+  manualList.innerHTML = manualsData.map(buildManualCard).join("");
 
-    const searchInput = document.getElementById("siteSearch");
+  const searchInput = document.getElementById("siteSearch");
 
-    searchInput.addEventListener("input", () => {
-      const query = searchInput.value.trim().toLowerCase();
-      const manualItems = document.querySelectorAll(".manual-item");
+  searchInput.addEventListener("input", () => {
+    const query = searchInput.value.trim().toLowerCase();
+    const manualItems = document.querySelectorAll(".manual-item");
 
-      manualItems.forEach(item => {
-        const text = item.getAttribute("data-search").toLowerCase();
-        const title = item.querySelector("h3").textContent.toLowerCase();
-        const match = text.includes(query) || title.includes(query);
-        item.classList.toggle("hidden-card", !match);
-      });
+    manualItems.forEach(item => {
+      const text = (item.getAttribute("data-search") || "").toLowerCase();
+      const title = item.querySelector("h3").textContent.toLowerCase();
+      const match = text.includes(query) || title.includes(query);
+
+      item.classList.toggle("hidden-card", !match);
     });
-  </script>
+  });
+</script>
 </body>
 </html>
