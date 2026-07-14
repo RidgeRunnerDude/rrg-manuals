@@ -90,63 +90,90 @@
   </div>
 
   <script src="../assets/js/products-data.js"></script>
-  <script>
-    const productsGrid = document.getElementById("productsGrid");
-    const searchInput = document.getElementById("siteSearch");
+ <script>
+  const productsGrid = document.getElementById("productsGrid");
+  const searchInput = document.getElementById("siteSearch");
 
-    function buildProductCard(product) {
-      const buttonsHtml = product.comingSoon
-        ? `
-          <div class="button-row">
-            <span class="coming-soon-label">Coming Soon</span>
-          </div>
-        `
-        : `
-          <div class="button-row">
-            <a class="btn btn-manual" href="${product.manual}" target="_blank">Field Manual</a>
-            <a class="btn btn-parts" href="${product.parts}">Parts</a>
-            <a class="btn btn-etsy" href="${product.etsy}" target="_blank">Buy on Etsy</a>
-          </div>
-        `;
+  function buildProductCard(product) {
+    const prototypeBadge = product.comingSoon
+      ? `<div class="prototype-badge">Prototype</div>`
+      : "";
 
-      const prototypeBadge = product.comingSoon
-        ? `<div class="prototype-badge">Prototype</div>`
-        : "";
+    const buttonsHtml = product.comingSoon
+      ? `
+        <div class="button-row">
+          <span class="coming-soon-label">Coming Soon</span>
+        </div>
+      `
+      : `
+        <div class="button-row">
+          <a
+            class="btn btn-manual"
+            href="${product.manual}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Field Manual
+          </a>
 
-      return `
-        <div class="card product-card ${product.comingSoon ? "coming-soon-card" : ""}" data-search="${product.search}">
-          <div class="product-image-wrap">
-            ${prototypeBadge}
-            <img
-              src="${product.image}"
-              alt="${product.title}"
-              class="product-image"
-            />
-          </div>
+          <a
+            class="btn btn-parts"
+            href="${product.parts}"
+          >
+            Parts
+          </a>
 
-          <h3>${product.title}</h3>
-          <p>${product.description}</p>
-
-          ${buttonsHtml}
+          ${product.etsy ? `
+            <a
+              class="btn btn-etsy"
+              href="${product.etsy}"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Buy on Etsy
+            </a>
+          ` : ""}
         </div>
       `;
-    }
 
-    productsGrid.innerHTML = productsData.map(buildProductCard).join("");
+    return `
+      <div
+        class="card product-card ${product.comingSoon ? "coming-soon-card" : ""}"
+        data-search="${product.search || ""}"
+      >
+        <div class="product-image-wrap">
+          ${prototypeBadge}
 
-    searchInput.addEventListener("input", () => {
-      const query = searchInput.value.trim().toLowerCase();
-      const items = document.querySelectorAll(".product-card");
+          <img
+            src="${product.image}"
+            alt="${product.title}"
+            class="product-image"
+          />
+        </div>
 
-      items.forEach(item => {
-        const text = (item.getAttribute("data-search") || "").toLowerCase();
-        const title = item.querySelector("h3").textContent.toLowerCase();
-        const match = text.includes(query) || title.includes(query);
-        item.classList.toggle("hidden-card", !match);
-      });
+        <h3>${product.title}</h3>
+        <p>${product.description}</p>
+
+        ${buttonsHtml}
+      </div>
+    `;
+  }
+
+  productsGrid.innerHTML = productsData.map(buildProductCard).join("");
+
+  searchInput.addEventListener("input", () => {
+    const query = searchInput.value.trim().toLowerCase();
+    const items = document.querySelectorAll(".product-card");
+
+    items.forEach(item => {
+      const text = (item.getAttribute("data-search") || "").toLowerCase();
+      const title = item.querySelector("h3").textContent.toLowerCase();
+      const match = text.includes(query) || title.includes(query);
+
+      item.classList.toggle("hidden-card", !match);
     });
-  </script>
-
+  });
+</script>
 
 </body>
 </html>
