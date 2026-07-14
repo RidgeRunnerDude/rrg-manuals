@@ -70,18 +70,28 @@
     const partsGrid = document.getElementById("partsGrid");
 
     function buildPartCard(part) {
-      return `
-        <div class="card product-card" data-search="${part.search}">
-          <img src="${part.image}" alt="${part.title}" />
-          <h3>${part.title}</h3>
-          <p>${part.description}</p>
-          <div class="button-row">
-            <a class="btn btn-manual" href="${part.manual}" target="_blank">Field Manual</a>
-            <a class="btn btn-etsy" href="${part.etsy}" target="_blank">Buy on Etsy</a>
-          </div>
-        </div>
-      `;
-    }
+    return `
+    <div class="card product-card" data-search="${part.search}">
+        <img src="${part.image}" alt="${part.title}" />
+        <h3>${part.title}</h3>
+        <p>${part.description}</p>
+
+        <div class="button-row">
+           <a class="btn btn-manual"
+   href="${part.manual}"
+   target="_blank"
+   rel="noopener noreferrer">
+    Field Manual
+</a>
+
+${part.etsy ? `
+    <a class="btn btn-etsy"
+       href="${part.etsy}"
+       target="_blank"
+       rel="noopener noreferrer">
+        Buy on Etsy
+    </a>
+` : ""}
 
     partsGrid.innerHTML = partsData.map(buildPartCard).join("");
 

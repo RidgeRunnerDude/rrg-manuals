@@ -5,8 +5,8 @@ const productsData = [
     image: "../assets/images/rocket-reel.png",
     manual: "../assets/docs/Rocket-Reel-Manual.pdf",
     parts: "../parts/",
-    etsy: "https://www.etsy.com/listing/YOUR-ROCKET-REEL-LINK",
-    search: "rocket reel fishing hand line reel manual parts etsy"
+    etsy: "",
+    search: "rocket reel fishing hand line reel manual parts"
   },
   {
     title: "Timber Tickler 6N",
@@ -14,8 +14,8 @@ const productsData = [
     image: "../assets/images/6ntimbertickler.png",
     manual: "../assets/docs/Timber-Tickler-6N-Manual.pdf",
     parts: "../parts/",
-    etsy: "https://www.etsy.com/listing/YOUR-TIMBER-TICKLER-6N-LINK",
-    search: "timber tickler 6n manual parts etsy"
+    etsy: "",
+    search: "timber tickler 6n manual parts"
   },
   {
     title: "Timber Tickler 9N",
@@ -23,8 +23,8 @@ const productsData = [
     image: "../assets/images/9ntimbertickler.png",
     manual: "../assets/docs/Timber-Tickler-9N-Manual.pdf",
     parts: "../parts/",
-    etsy: "https://www.etsy.com/listing/YOUR-TIMBER-TICKLER-9N-LINK",
-    search: "timber tickler 9n manual parts etsy"
+    etsy: "",
+    search: "timber tickler 9n manual parts"
   },
   {
     title: "Timber Tickler 12N",
@@ -32,8 +32,8 @@ const productsData = [
     image: "../assets/images/12ntimbertickler.png",
     manual: "../assets/docs/Timber-Tickler-12N-Manual.pdf",
     parts: "../parts/",
-    etsy: "https://www.etsy.com/listing/YOUR-TIMBER-TICKLER-12N-LINK",
-    search: "timber tickler 12n manual parts etsy"
+    etsy: "",
+    search: "timber tickler 12n manual parts"
   },
   {
     title: "Walletül Release",
@@ -41,8 +41,8 @@ const productsData = [
     image: "../assets/images/walletul.png",
     manual: "../assets/docs/Walletul-Release-Manual.pdf",
     parts: "../parts/",
-    etsy: "https://www.etsy.com/listing/YOUR-WALLETUL-LINK",
-    search: "walletul walletül release manual parts etsy"
+    etsy: "",
+    search: "walletul walletül release manual parts"
   },
   {
     title: "Ridge Rack 3.25 Cup Holder",
@@ -50,8 +50,8 @@ const productsData = [
     image: "../assets/images/325cupholder.png",
     manual: "../assets/docs/Ridge-Rack-Cup-Holder-3.25-Manual.pdf",
     parts: "../parts/",
-    etsy: "https://www.etsy.com/listing/YOUR-325-CUP-HOLDER-LINK",
-    search: "3.25 cup holder manual parts etsy"
+    etsy: "",
+    search: "3.25 cup holder manual parts"
   },
   {
     title: "Ridge Rack 4.0 Cup Holder",
@@ -59,8 +59,8 @@ const productsData = [
     image: "../assets/images/4cupholder.png",
     manual: "../assets/docs/Ridge-Rack-Cup-Holder-4.0-Manual.pdf",
     parts: "../parts/",
-    etsy: "https://www.etsy.com/listing/YOUR-4-CUP-HOLDER-LINK",
-    search: "4.00 cup holder manual parts etsy"
+    etsy: "",
+    search: "4.00 cup holder manual parts"
   },
   {
     title: "Ridge Rack Phone Holder",
@@ -68,8 +68,8 @@ const productsData = [
     image: "../assets/images/rrphoneholder.png",
     manual: "../assets/docs/Ridge-Rack-Phone-Holder-Manual.pdf",
     parts: "../parts/",
-    etsy: "https://www.etsy.com/listing/YOUR-PHONE-HOLDER-LINK",
-    search: "ridge rack phone holder manual parts etsy"
+    etsy: "",
+    search: "ridge rack phone holder manual parts"
   },
 {
     title: "Ridge Rack Minipod Mount",
@@ -77,8 +77,8 @@ const productsData = [
     image: "../assets/images/minipod.png",
     manual: "../assets/docs/Ridge-Rack-Manual.pdf",
     parts: "../parts/",
-    etsy: "https://www.etsy.com/listing/YOUR-RIDGE-RACK-MINPOD-LINK",
-    search: "ridge rack minipod mount manual parts etsy"
+    etsy: "",
+    search: "ridge rack minipod mount manual parts"
   },
   {
     title: "Ridge Rack Single Line Mount",
@@ -86,8 +86,8 @@ const productsData = [
     image: "../assets/images/rrsingleline.png",
     manual: "../assets/docs/Ridge-Rack-Manual.pdf",
     parts: "../parts/",
-    etsy: "https://www.etsy.com/listing/YOUR-RIDGE-RACK-SINGLE-LINE-LINK",
-    search: "ridge rack single line mount manual parts etsy"
+    etsy: "",
+    search: "ridge rack single line mount manual parts"
   },
   {
     title: "Ridge Rack Double Line Mount",
@@ -95,8 +95,8 @@ const productsData = [
     image: "../assets/images/rrdoubleline.png",
     manual: "../assets/docs/Ridge-Rack-Manual.pdf",
     parts: "../parts/",
-    etsy: "https://www.etsy.com/listing/YOUR-RIDGE-RACK-DOUBLE-LINE-LINK",
-    search: "ridge rack double line mount manual parts etsy"
+    etsy: "",
+    search: "ridge rack double line mount manual parts"
   },
  {
     title: "Ridge Rack Universal Mount",
@@ -104,8 +104,8 @@ const productsData = [
     image: "../assets/images/universal_mount.png",
     manual: "../assets/docs/Ridge-Rack-Manual.pdf",
     parts: "../parts/",
-    etsy: "https://www.etsy.com/listing/YOUR-RIDGE-RACK-UNIVERSAL-MOUNT-LINK",
-    search: "ridge rack universal mount manual parts etsy"
+    etsy: "",
+    search: "ridge rack universal mount manual parts"
   },
  {
     title: "Ridge Rack Pole Mount",
@@ -113,8 +113,8 @@ const productsData = [
     image: "../assets/images/rrpole.png",
     manual: "../assets/docs/Ridge-Rack-Manual.pdf",
     parts: "../parts/",
-    etsy: "https://www.etsy.com/listing/YOUR-RIDGE-RACK-POLE-MOUNT-LINK",
-    search: "ridge rack pole mount manual parts etsy"
+    etsy: "",
+    search: "ridge rack pole mount manual parts"
   },
   {
     title: "Ridge Rack Monopod",
@@ -122,8 +122,8 @@ const productsData = [
     image: "../assets/images/rrmonopod.png",
     manual: "../assets/docs/Ridge-Rack-Manual.pdf",
     parts: "../parts/",
-    etsy: "https://www.etsy.com/listing/YOUR-RIDGE-RACK-MONOPOD-LINK",
-    search: "ridge rack monopod manual parts etsy"
+    etsy: "",
+    search: "ridge rack monopod manual parts"
   },
   {
     title: "Yak Rack",
@@ -131,8 +131,8 @@ const productsData = [
     image: "../assets/images/YakRack.png",
     manual: "../assets/docs/Yak-Rack-Manual.pdf",
     parts: "../parts/",
-    etsy: "https://www.etsy.com/listing/YOUR-YAK-RACK-LINK",
-    search: "yak rack manual parts etsy"
+    etsy: "",
+    search: "yak rack manual parts"
   },
   {
     title: "Reel Rack",
@@ -140,8 +140,8 @@ const productsData = [
     image: "../assets/images/reelrack.png",
     manual: "../assets/docs/Reel-Rack-Manual.pdf",
     parts: "../parts/",
-    etsy: "https://www.etsy.com/listing/YOUR-REEL-RACK-LINK",
-    search: "reel rack manual parts etsy"
+    etsy: "",
+    search: "reel rack manual parts"
   },
   {
     title: "Blaster Master",
@@ -149,8 +149,8 @@ const productsData = [
     image: "../assets/images/BlasterMaster.png",
     manual: "../assets/docs/Blaster-Master-Manual.pdf",
     parts: "../parts/",
-    etsy: "https://www.etsy.com/listing/YOUR-BLASTER-MASTER-LINK",
-    search: "blaster master manual parts etsy"
+    etsy: "",
+    search: "blaster master manual parts"
   },
   {
     title: "Tackle Toter L7C",
@@ -158,8 +158,8 @@ const productsData = [
     image: "../assets/images/l7ctackletoter.png",
     manual: "../assets/docs/Tackle-Toter-L7C-Manual.pdf",
     parts: "../parts/",
-    etsy: "https://www.etsy.com/listing/YOUR-TACKLE-TOTER-L7C-LINK",
-    search: "tackle toter l7c manual parts etsy"
+    etsy: "",
+    search: "tackle toter l7c manual parts"
   },
   {
     title: "Tackle Toter L12C",
@@ -167,8 +167,8 @@ const productsData = [
     image: "../assets/images/l12ctackletoter.png",
     manual: "../assets/docs/Tackle-Toter-L12C-Manual.pdf",
     parts: "../parts/",
-    etsy: "https://www.etsy.com/listing/YOUR-TACKLE-TOTER-L12C-LINK",
-    search: "tackle toter l12c manual parts etsy"
+    etsy: "",
+    search: "tackle toter l12c manual parts"
   },
   {
     title: "Tackle Toter M7C",
@@ -176,8 +176,8 @@ const productsData = [
     image: "../assets/images/m7ctackletoter.png",
     manual: "../assets/docs/Tackle-Toter-M7C-Manual.pdf",
     parts: "../parts/",
-    etsy: "https://www.etsy.com/listing/YOUR-TACKLE-TOTER-M7C-LINK",
-    search: "tackle toter m7c manual parts etsy"
+    etsy: "",
+    search: "tackle toter m7c manual parts"
   },
   {
     title: "Tackle Toter M12C",
@@ -185,8 +185,8 @@ const productsData = [
     image: "../assets/images/m12ctackletoter.png",
     manual: "../assets/docs/Tackle-Toter-M12C-Manual.pdf",
     parts: "../parts/",
-    etsy: "https://www.etsy.com/listing/YOUR-TACKLE-TOTER-M12C-LINK",
-    search: "tackle toter m12c manual parts etsy"
+    etsy: "",
+    search: "tackle toter m12c manual parts"
   },
   {
     title: "Tackle Toter S7C",
@@ -194,8 +194,8 @@ const productsData = [
     image: "../assets/images/s7ctackletoter.png",
     manual: "../assets/docs/Tackle-Toter-S7C-Manual.pdf",
     parts: "../parts/",
-    etsy: "https://www.etsy.com/listing/YOUR-TACKLE-TOTER-S7C-LINK",
-    search: "tackle toter s7c manual parts etsy"
+    etsy: "",
+    search: "tackle toter s7c manual parts"
   },
   {
     title: "Tack Rack",
@@ -203,8 +203,8 @@ const productsData = [
     image: "../assets/images/tackrack.png",
     manual: "../assets/docs/Tack-Rack-Manual.pdf",
     parts: "../parts/",
-    etsy: "https://www.etsy.com/listing/YOUR-TACK-RACK-LINK",
-    search: "tack rack manual parts etsy"
+    etsy: "",
+    search: "tack rack manual parts"
   },
 
   // Coming Soon
