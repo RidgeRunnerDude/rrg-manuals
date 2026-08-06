@@ -153,6 +153,15 @@ const productsData = [
     search: "blaster master manual parts"
   },
   {
+    title: "Tackle Toter S7C",
+    description: "A small but capable tackle organizer with seven covered compartments and a front Rocket Reel mount for minimal fishing setups.",
+    image: "../assets/images/s7ctackletoter.png",
+    manual: "../assets/docs/Tackle-Toter-S7C-Manual.pdf",
+    parts: "../parts/",
+    etsy: "",
+    search: "tackle toter s7c manual parts"
+  },
+  {
     title: "Tackle Toter L7C",
     description: "A compact tactical tackle organizer with seven covered compartments and a front Rocket Reel mount for quick-access fishing gear.",
     image: "../assets/images/l7ctackletoter.png",
@@ -169,33 +178,6 @@ const productsData = [
     parts: "../parts/",
     etsy: "",
     search: "tackle toter l12c manual parts"
-  },
-  {
-    title: "Tackle Toter M7C",
-    description: "A slim-profile tackle organizer with seven covered compartments and a front Rocket Reel mount for lightweight fishing setups.",
-    image: "../assets/images/m7ctackletoter.png",
-    manual: "../assets/docs/Tackle-Toter-M7C-Manual.pdf",
-    parts: "../parts/",
-    etsy: "",
-    search: "tackle toter m7c manual parts"
-  },
-  {
-    title: "Tackle Toter M12C",
-    description: "A slim-profile tackle organizer with twelve covered compartments and a front Rocket Reel mount for streamlined fishing setups.",
-    image: "../assets/images/m12ctackletoter.png",
-    manual: "../assets/docs/Tackle-Toter-M12C-Manual.pdf",
-    parts: "../parts/",
-    etsy: "",
-    search: "tackle toter m12c manual parts"
-  },
-  {
-    title: "Tackle Toter S7C",
-    description: "A small but capable tackle organizer with seven covered compartments and a front Rocket Reel mount for minimal fishing setups.",
-    image: "../assets/images/s7ctackletoter.png",
-    manual: "../assets/docs/Tackle-Toter-S7C-Manual.pdf",
-    parts: "../parts/",
-    etsy: "",
-    search: "tackle toter s7c manual parts"
   },
   {
     title: "Tack Rack",

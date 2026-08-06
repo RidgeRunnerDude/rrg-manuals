@@ -78,6 +78,12 @@ const manualsData = [
     search: "tack rack manual pdf"
   },
   {
+    title: "Tackle Toter S7C Field Manual",
+    pdf: "../assets/docs/Tackle-Toter-S7C-Manual.pdf",
+    etsy: "",
+    search: "tackle toter s7c manual pdf"
+  },
+  {
     title: "Tackle Toter L7C Field Manual",
     pdf: "../assets/docs/Tackle-Toter-L7C-Manual.pdf",
     etsy: "",
@@ -88,24 +94,6 @@ const manualsData = [
     pdf: "../assets/docs/Tackle-Toter-L12C-Manual.pdf",
     etsy: "",
     search: "tackle toter l12c manual pdf"
-  },
-  {
-    title: "Tackle Toter M7C Field Manual",
-    pdf: "../assets/docs/Tackle-Toter-M7C-Manual.pdf",
-    etsy: "",
-    search: "tackle toter m7c manual pdf"
-  },
-  {
-    title: "Tackle Toter M12C Field Manual",
-    pdf: "../assets/docs/Tackle-Toter-M12C-Manual.pdf",
-    etsy: "",
-    search: "tackle toter m12c manual pdf"
-  },
-  {
-    title: "Tackle Toter S7C Field Manual",
-    pdf: "../assets/docs/Tackle-Toter-S7C-Manual.pdf",
-    etsy: "",
-    search: "tackle toter s7c manual pdf"
   },
   {
     title: "Timber Tickler 6N Field Manual",
