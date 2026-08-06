@@ -128,6 +128,14 @@ const partsData = [
     search: "ridge rack monopod replacement parts manual"
   },
   {
+    title: "Tackle Toter S7C",
+    description: "Replacement part listing for the Tackle Toter S7C.",
+    image: "../assets/images/s7cassy.png",
+    manual: "../assets/docs/Tackle-Toter-S7C-Manual.pdf",
+    etsy: "",
+    search: "tackle toter replacement parts manual"
+  },
+  {
     title: "Tackle Toter L7C",
     description: "Replacement part listing for the Tackle Toter L7C.",
     image: "../assets/images/l7cassy.png",
@@ -140,30 +148,6 @@ const partsData = [
     description: "Replacement part listing for the Tackle Toter L12C.",
     image: "../assets/images/l12cassy.png",
     manual: "../assets/docs/Tackle-Toter-L12C-Manual.pdf",
-    etsy: "",
-    search: "tackle toter replacement parts manual"
-  },
-  {
-    title: "Tackle Toter M7C",
-    description: "Replacement part listing for the Tackle Toter M7C.",
-    image: "../assets/images/m7cassy.png",
-    manual: "../assets/docs/Tackle-Toter-M7C-Manual.pdf",
-    etsy: "",
-    search: "tackle toter replacement parts manual"
-  },
-  {
-    title: "Tackle Toter M12C",
-    description: "Replacement part listing for the Tackle Toter M12C.",
-    image: "../assets/images/m12cassy.png",
-    manual: "../assets/docs/Tackle-Toter-M12C-Manual.pdf",
-    etsy: "",
-    search: "tackle toter replacement parts manual"
-  },
-  {
-    title: "Tackle Toter S7C",
-    description: "Replacement part listing for the Tackle Toter S7C.",
-    image: "../assets/images/s7cassy.png",
-    manual: "../assets/docs/Tackle-Toter-S7C-Manual.pdf",
     etsy: "",
     search: "tackle toter replacement parts manual"
   },
