@@ -597,6 +597,36 @@ main {
   display: inline-block;
 }
 
+.riverfest-card {
+    margin-top: 24px;
+}
+
+.riverfest-card h2 {
+    color: #e5c58a;
+}
+
+.riverfest-card .event-details {
+    line-height: 1.7;
+    margin: 18px 0 22px;
+}
+
+.announcement-button {
+    display: inline-block;
+    padding: 12px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.08);
+    transition: 0.2s ease;
+}
+
+.announcement-button:hover {
+    background: rgba(255, 255, 255, 0.16);
+    transform: translateY(-1px);
+}
+
 /* ===============================
    SPOTLIGHT / FEATURE BLOCKS
 ================================ */
