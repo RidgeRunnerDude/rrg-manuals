@@ -610,6 +610,14 @@ main {
     margin: 18px 0 22px;
 }
 
+.riverfest-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
 .announcement-button {
     display: inline-block;
     padding: 12px 20px;

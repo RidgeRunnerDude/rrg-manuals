@@ -116,6 +116,8 @@
         600 Brown Industrial Parkway, Canton, GA 30114
     </p>
 
+    <div class="riverfest-buttons">
+
     <a
         href="https://www.google.com/maps/search/?api=1&query=Etowah+River+Park+600+Brown+Industrial+Parkway+Canton+GA+30114"
         target="_blank"
@@ -124,6 +126,12 @@
     >
         Get Directions
     </a>
+
+    <button class="calendar-button" onclick="addRiverfestToCalendar()">
+        📅 Add Riverfest to Calendar
+    </button>
+</div>
+
 </div>
 
     <div class="etsy-coming-soon-callout">
@@ -416,6 +424,64 @@
       <a href="/contact/">Contact</a>
     </nav>
   </footer>
+
+<script>
+function addRiverfestToCalendar() {
+
+    const calendarData = `BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Ridge Runner Gear//Riverfest 2026//EN
+CALSCALE:GREGORIAN
+
+BEGIN:VEVENT
+UID:riverfest-saturday-2026@ridgerunnergear.net
+DTSTAMP:20260811T180000Z
+DTSTART;TZID=America/New_York:20260926T100000
+DTEND;TZID=America/New_York:20260926T180000
+SUMMARY:Riverfest 2026 - Ridge Runner Gear
+LOCATION:Etowah River Park\\, 600 Brown Industrial Parkway\\, Canton\\, GA 30114
+DESCRIPTION:Come see Ridge Runner Gear at Riverfest! See the Rocket Reel in action with the Rocket Launcher casting aid and get a first look at our new Ridge Rack setup for saddle hunters.
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Riverfest 2026 - Ridge Runner Gear is tomorrow!
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:riverfest-sunday-2026@ridgerunnergear.net
+DTSTAMP:20260811T180000Z
+DTSTART;TZID=America/New_York:20260927T100000
+DTEND;TZID=America/New_York:20260927T170000
+SUMMARY:Riverfest 2026 - Ridge Runner Gear
+LOCATION:Etowah River Park\\, 600 Brown Industrial Parkway\\, Canton\\, GA 30114
+DESCRIPTION:Come see Ridge Runner Gear at Riverfest! See the Rocket Reel in action with the Rocket Launcher casting aid and get a first look at our new Ridge Rack setup for saddle hunters.
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Riverfest 2026 - Ridge Runner Gear is tomorrow!
+END:VALARM
+END:VEVENT
+
+END:VCALENDAR`;
+
+    const blob = new Blob([calendarData], {
+        type: "text/calendar;charset=utf-8"
+    });
+
+    const url = URL.createObjectURL(blob);
+
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = "Ridge-Runner-Gear-Riverfest-2026.ics";
+
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    URL.revokeObjectURL(url);
+}
+</script>
 
 </body>
 </html>
