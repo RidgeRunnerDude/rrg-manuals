@@ -88,6 +88,14 @@ const partsData = [
     search: "ridge rack minipod replacement parts manual"
   },
   {
+    title: "Ridge Rack Saddle Hunter Kit",
+    description: "Replacement part listing for the Ridge Rack Saddle Hunter Kit",
+    image: "../assets/images/treemountassy.png",
+    manual: "../assets/docs/Ridge-Rack-Manual.pdf",
+    etsy: "",
+    search: "ridge rack minipod replacement parts manual"
+  },
+  {
     title: "Ridge Rack Single Line",
     description: "Replacement part listing for the Ridge Rack Single Line",
     image: "../assets/images/ridgeracksinglelineassy.png",
