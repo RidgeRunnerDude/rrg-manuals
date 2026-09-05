@@ -201,8 +201,6 @@ const productsData = [
     title: "Hands-Free Angler Kit",
     description: "A lightweight bundle that includes the Rocket Reel and Reel Rack for a hands-free fishing system.",
     image: "../assets/images/handsfreeanglerkit.png",
-    manual: "",
-    parts: "",
     etsy: "",
     search: "hands free angler kit manual parts"
   },
