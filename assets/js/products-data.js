@@ -80,6 +80,15 @@ const productsData = [
     etsy: "",
     search: "ridge rack minipod mount manual parts"
   },
+{
+    title: "Ridge Rack Saddle Hunter Kit",
+    description: "A lightweight mount for trees that holds a phone with Magsafe cases and works within the modular Ridge Rack system for versatile setups.",
+    image: "../assets/images/treephonemount.png",
+    manual: "../assets/docs/Ridge-Rack-Manual.pdf",
+    parts: "../parts/",
+    etsy: "",
+    search: "ridge rack saddle hunter kit manual parts"
+  },
   {
     title: "Ridge Rack Single Line Mount",
     description: "A lightweight mount for hammocks with single ridge lines that holds a phone or fan and works within the modular Ridge Rack system for versatile setups.",
