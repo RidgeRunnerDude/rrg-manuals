@@ -107,21 +107,25 @@
       `
       : `
         <div class="button-row">
-          <a
-            class="btn btn-manual"
-            href="${product.manual}"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Field Manual
-          </a>
+          ${product.manual ? `
+            <a
+              class="btn btn-manual"
+              href="${product.manual}"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Field Manual
+            </a>
+          ` : ""}
 
-          <a
-            class="btn btn-parts"
-            href="${product.parts}"
-          >
-            Parts
-          </a>
+          ${product.parts ? `
+            <a
+              class="btn btn-parts"
+              href="${product.parts}"
+            >
+              Parts
+            </a>
+          ` : ""}
 
           ${product.etsy ? `
             <a
@@ -133,6 +137,7 @@
               Buy on Etsy
             </a>
           ` : ""}
+
         </div>
       `;
 

@@ -201,8 +201,10 @@ const productsData = [
     title: "Hands-Free Angler Kit",
     description: "A lightweight bundle that includes the Rocket Reel and Reel Rack for a hands-free fishing system.",
     image: "../assets/images/handsfreeanglerkit.png",
+    manual: "",
+    parts: "",
     etsy: "",
-    search: "hands free angler kit manual parts"
+    search: "hands free angler kit"
   },
 {
     title: "S7C Creekside Kit",
@@ -211,7 +213,7 @@ const productsData = [
     manual: "",
     parts: "",
     etsy: "",
-    search: "s7c creekside kit manual parts"
+    search: "s7c creekside kit"
   },
 {
     title: "L7/12C Creekside Kit",
@@ -220,7 +222,7 @@ const productsData = [
     manual: "",
     parts: "",
     etsy: "",
-    search: "l7c l12c creekside kit manual parts"
+    search: "l7c l12c creekside kit"
   },
 {
     title: "6N Trailside Survior Kit",
@@ -229,7 +231,7 @@ const productsData = [
     manual: "",
     parts: "",
     etsy: "",
-    search: "6n trailside survior kit manual parts"
+    search: "6n trailside survior kit"
   },
 {
     title: "9N Trailside Survior Kit",
@@ -238,7 +240,7 @@ const productsData = [
     manual: "",
     parts: "",
     etsy: "",
-    search: "9n trailside survior kit manual parts"
+    search: "9n trailside survior kit"
   },
 {
     title: "12N Trailside Survior Kit",
@@ -247,7 +249,7 @@ const productsData = [
     manual: "",
     parts: "",
     etsy: "",
-    search: "12n trailside survior kit manual parts"
+    search: "12n trailside survior kit"
   },
 {
     title: "Small Yak Angler Kit",
@@ -256,7 +258,7 @@ const productsData = [
     manual: "",
     parts: "",
     etsy: "",
-    search: "small yak angler kit manual parts"
+    search: "small yak angler kit"
   },
 {
     title: "Large Yak Angler Kit",
@@ -265,7 +267,7 @@ const productsData = [
     manual: "",
     parts: "",
     etsy: "",
-    search: "large yak angler kit manual parts"
+    search: "large yak angler kit"
   },
 {
     title: "6N/S7C Trailside Essentials Kit",
@@ -274,7 +276,7 @@ const productsData = [
     manual: "",
     parts: "",
     etsy: "",
-    search: "6n s7c trailside essentials kit manual parts"
+    search: "6n s7c trailside essentials kit"
   },
 {
     title: "6N/L7/12C Trailside Essentials Kit",
@@ -283,7 +285,7 @@ const productsData = [
     manual: "",
     parts: "",
     etsy: "",
-    search: "6n l7c l12c trailside essentials kit manual parts"
+    search: "6n l7c l12c trailside essentials kit"
   },
 {
     title: "9N/S7C Trailside Essentials Kit",
@@ -292,7 +294,7 @@ const productsData = [
     manual: "",
     parts: "",
     etsy: "",
-    search: "9n s7c trailside essentials kit manual parts"
+    search: "9n s7c trailside essentials kit"
   },
 {
     title: "9N/L7/12C Trailside Essentials Kit",
@@ -301,7 +303,7 @@ const productsData = [
     manual: "",
     parts: "",
     etsy: "",
-    search: "9n l7c l12c trailside essentials kit manual parts"
+    search: "9n l7c l12c trailside essentials kit"
   },
 {
     title: "12N/S7C Trailside Essentials Kit",
@@ -310,7 +312,7 @@ const productsData = [
     manual: "",
     parts: "",
     etsy: "",
-    search: "12n s7c trailside essentials kit manual parts"
+    search: "12n s7c trailside essentials kit"
   },
 {
     title: "12N/L7/12C Trailside Essentials Kit",
@@ -319,7 +321,7 @@ const productsData = [
     manual: "",
     parts: "",
     etsy: "",
-    search: "12n l7c l12c trailside essentials kit manual parts"
+    search: "12n l7c l12c trailside essentials kit"
   },
 
   // Coming Soon
