@@ -35,6 +35,12 @@ const manualsData = [
     etsy: "",
     search: "ridge rack minipod manual pdf"
   },
+{
+    title: "Ridge Rack Saddle Hunter Kit Field Manual",
+    pdf: "../assets/docs/Ridge-Rack-Manual.pdf",
+    etsy: "",
+    search: "ridge rack saddle hunter kit manual pdf"
+  },
   {
     title: "Ridge Rack Single Line Field Manual",
     pdf: "../assets/docs/Ridge-Rack-Manual.pdf",
