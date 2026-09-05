@@ -154,7 +154,7 @@ const productsData = [
   },
   {
     title: "Blaster Master",
-    description: "A lightweight three-in-one trail hygiene attachment that converts a standard bottle into a shower, bidet, or secure cap.",
+    description: "A lightweight three-in-one trail hygiene attachment that converts a standard bottle into a shower, bidet, or secure leak-proof cap.",
     image: "../assets/images/BlasterMaster.png",
     manual: "../assets/docs/Blaster-Master-Manual.pdf",
     parts: "../parts/",
@@ -196,6 +196,132 @@ const productsData = [
     parts: "../parts/",
     etsy: "",
     search: "tack rack manual parts"
+  },
+{
+    title: "Hands-Free Angler Kit",
+    description: "A lightweight bundle that includes the Rocket Reel and Reel Rack for a hands-free fishing system.",
+    image: "../assets/images/handsfreeanglerkit.png",
+    manual: "../assets/docs/Rocket-Reel-Manual.pdf",
+    parts: "../parts/",
+    etsy: "",
+    search: "hands free angler kit manual parts"
+  },
+{
+    title: "S7C Creekside Kit",
+    description: "A lightweight bundle that includes the Rocket Reel and S7C Tacle Toter for a compact fishing system.",
+    image: "../assets/images/s7c_creekside_kit.png",
+    manual: "../assets/docs/Rocket-Reel-Manual.pdf",
+    parts: "../parts/",
+    etsy: "",
+    search: "s7c creekside kit manual parts"
+  },
+{
+    title: "L7/12C Creekside Kit",
+    description: "A lightweight bundle that includes the Rocket Reel and L7C or L12C Tacle Toter for a compact fishing system.",
+    image: "../assets/images/l7_l12_creekside_kit.png",
+    manual: "../assets/docs/Rocket-Reel-Manual.pdf",
+    parts: "../parts/",
+    etsy: "",
+    search: "l7c l12c creekside kit manual parts"
+  },
+{
+    title: "6N Trailside Survior Kit",
+    description: "A lightweight bundle that includes the Rocket Reel and a 6N Timber Tickler saw for a multi-use compact kit.",
+    image: "../assets/images/trailside_6n_kit.png",
+    manual: "../assets/docs/Rocket-Reel-Manual.pdf",
+    parts: "../parts/",
+    etsy: "",
+    search: "6n trailside survior kit manual parts"
+  },
+{
+    title: "9N Trailside Survior Kit",
+    description: "A lightweight bundle that includes the Rocket Reel and a 9N Timber Tickler saw for a multi-use compact kit.",
+    image: "../assets/images/trailside_9n.png",
+    manual: "../assets/docs/Rocket-Reel-Manual.pdf",
+    parts: "../parts/",
+    etsy: "",
+    search: "9n trailside survior kit manual parts"
+  },
+{
+    title: "12N Trailside Survior Kit",
+    description: "A lightweight bundle that includes the Rocket Reel and a 12N Timber Tickler saw for a multi-use compact kit.",
+    image: "../assets/images/trailside_12n.png",
+    manual: "../assets/docs/Rocket-Reel-Manual.pdf",
+    parts: "../parts/",
+    etsy: "",
+    search: "12n trailside survior kit manual parts"
+  },
+{
+    title: "Small Yak Angler Kit",
+    description: "A lightweight bundle that includes the Rocket Reel, S7C Tackle Toter and Yak Rack for a kayak fishing kit.",
+    image: "../assets/images/yak_angler_kit_small.png",
+    manual: "../assets/docs/Rocket-Reel-Manual.pdf",
+    parts: "../parts/",
+    etsy: "",
+    search: "small yak angler kit manual parts"
+  },
+{
+    title: "Large Yak Angler Kit",
+    description: "A lightweight bundle that includes the Rocket Reel, L7C or L12C Tackle Toter and Yak Rack for a kayak fishing kit.",
+    image: "../assets/images/yak_angler_kit_large.png",
+    manual: "../assets/docs/Rocket-Reel-Manual.pdf",
+    parts: "../parts/",
+    etsy: "",
+    search: "large yak angler kit manual parts"
+  },
+{
+    title: "6N/S7C Trailside Essentials Kit",
+    description: "A lightweight bundle that includes the Rocket Reel, 6N Timber Tickler saw and a S7C Tackle Toter for a multi-use compact kit.",
+    image: "../assets/images/6ns7c_trailside.png",
+    manual: "../assets/docs/Rocket-Reel-Manual.pdf",
+    parts: "../parts/",
+    etsy: "",
+    search: "6n s7c trailside essentials kit manual parts"
+  },
+{
+    title: "6N/L7/12C Trailside Essentials Kit",
+    description: "A lightweight bundle that includes the Rocket Reel, 6N Timber Tickler saw and a L7C or L12C Tackle Toter for a multi-use compact kit.",
+    image: "../assets/images/6nl7c_trailside.png",
+    manual: "../assets/docs/Rocket-Reel-Manual.pdf",
+    parts: "../parts/",
+    etsy: "",
+    search: "6n l7c l12c trailside essentials kit manual parts"
+  },
+{
+    title: "9N/S7C Trailside Essentials Kit",
+    description: "A lightweight bundle that includes the Rocket Reel, 9N Timber Tickler saw and a S7C Tackle Toter for a multi-use compact kit.",
+    image: "../assets/images/9ns7c_trailside.png",
+    manual: "../assets/docs/Rocket-Reel-Manual.pdf",
+    parts: "../parts/",
+    etsy: "",
+    search: "9n s7c trailside essentials kit manual parts"
+  },
+{
+    title: "9N/L7/12C Trailside Essentials Kit",
+    description: "A lightweight bundle that includes the Rocket Reel, 9N Timber Tickler saw and a L7C or L12C Tackle Toter for a multi-use compact kit.",
+    image: "../assets/images/9nl7c_trailside.png",
+    manual: "../assets/docs/Rocket-Reel-Manual.pdf",
+    parts: "../parts/",
+    etsy: "",
+    search: "9n l7c l12c trailside essentials kit manual parts"
+  },
+{
+    title: "12N/S7C Trailside Essentials Kit",
+    description: "A lightweight bundle that includes the Rocket Reel, 12N Timber Tickler saw and a S7C Tackle Toter for a multi-use compact kit.",
+    image: "../assets/images/12ns7c_trailside.png",
+    manual: "../assets/docs/Rocket-Reel-Manual.pdf",
+    parts: "../parts/",
+    etsy: "",
+    search: "12n s7c trailside essentials kit manual parts"
+  },
+{
+    title: "12N/L7/12C Trailside Essentials Kit",
+    description: "A lightweight bundle that includes the Rocket Reel, 12N Timber Tickler saw and a L7C or L12C Tackle Toter for a multi-use compact kit.",
+    image: "../assets/images/12nl7c_trailside.png",
+    manual: "../assets/docs/Rocket-Reel-Manual.pdf",
+    parts: "../parts/",
+    etsy: "",
+    search: "12n l7c l12c trailside essentials kit manual parts"
   },
 
   // Coming Soon
