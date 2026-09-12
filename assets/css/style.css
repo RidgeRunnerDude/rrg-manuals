@@ -880,6 +880,15 @@ main {
   color: #ffffff;
 }
 
+.btn-product {
+  background: #8b6b2f;
+  color: #fff;
+}
+
+.btn-product:hover {
+  background: #a9823a;
+}
+
 /* ===============================
    MANUAL LIST
 ================================ */

@@ -100,46 +100,56 @@
       : "";
 
     const buttonsHtml = product.comingSoon
-      ? `
-        <div class="button-row">
-          <span class="coming-soon-label">Coming Soon</span>
-        </div>
-      `
-      : `
-        <div class="button-row">
-          ${product.manual ? `
-            <a
-              class="btn btn-manual"
-              href="${product.manual}"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Field Manual
-            </a>
-          ` : ""}
+  ? `
+      <div class="button-row">
+        <span class="coming-soon-label">Coming Soon</span>
+      </div>
+    `
+  : `
+      <div class="button-row">
 
-          ${product.parts ? `
-            <a
-              class="btn btn-parts"
-              href="${product.parts}"
-            >
-              Parts
-            </a>
-          ` : ""}
+        ${product.title === "Rocket Reel" ? `
+          <a
+            class="btn btn-product"
+            href="/rrg-manuals/rocketreelproductpage/"
+          >
+            View Product
+          </a>
+        ` : ""}
 
-          ${product.etsy ? `
-            <a
-              class="btn btn-etsy"
-              href="${product.etsy}"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Buy on Etsy
-            </a>
-          ` : ""}
+        ${product.manual ? `
+          <a
+            class="btn btn-manual"
+            href="${product.manual}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Field Manual
+          </a>
+        ` : ""}
 
-        </div>
-      `;
+        ${product.parts ? `
+          <a
+            class="btn btn-parts"
+            href="${product.parts}"
+          >
+            Parts
+          </a>
+        ` : ""}
+
+        ${product.etsy ? `
+          <a
+            class="btn btn-etsy"
+            href="${product.etsy}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Buy on Etsy
+          </a>
+        ` : ""}
+
+      </div>
+    `;
 
     return `
       <div
