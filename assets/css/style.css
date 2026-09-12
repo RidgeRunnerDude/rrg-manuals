@@ -1419,24 +1419,30 @@ footer,
 }
 
 /* ===============================
-   ROCKET REEL DESKTOP HERO
+   DESKTOP ONLY
 ================================ */
 
 @media (min-width: 901px) {
+
   .hero-spotlight {
     grid-template-columns: 1.1fr 0.9fr;
   }
 
-.hero-spotlight .eyebrow {
-  font-size: clamp(2.2rem, 4vw, 3.2rem);
-  line-height: 1.1;
-  letter-spacing: 0;
-  text-transform: none;
-  font-weight: 700;
-}
+  .hero-spotlight .eyebrow {
+    font-size: clamp(2.2rem, 4vw, 3.2rem);
+    line-height: 1.1;
+    letter-spacing: 0;
+    text-transform: none;
+    font-weight: 700;
+  }
 
   .hero-spotlight-image img {
     max-width: 480px;
   }
-}
 
+  .eddie-video-section .eyebrow,
+  .eddie-video-section h2 {
+    font-size: 2rem;
+  }
+
+}
