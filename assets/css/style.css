@@ -1416,4 +1416,31 @@ footer,
   gap: 12px;
   flex-wrap: wrap;
 }
+.hero-spotlight {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 24px;
+  align-items: center;
+  margin: 34px 0 20px;
+  padding: 26px;
+  border-radius: 20px;
+  background: var(--bg-panel-strong);
+  border: 1px solid var(--border-mid);
+  backdrop-filter: blur(6px);
+  box-shadow: var(--shadow-strong);
+}
+
+.hero-spotlight .eyebrow {
+  font-size: 1rem;
+}
+
+.hero-spotlight-image img {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  display: block;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
 }
