@@ -1449,4 +1449,12 @@ footer,
     max-width: 700px;
   }
 
+  .hero-spotlight,
+  .eddie-video-section,
+  .feature-section,
+  .best-uses-section,
+  .belt-clip-section {
+    margin-bottom: 36px;
+  }
+
 }
