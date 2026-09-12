@@ -1445,4 +1445,8 @@ footer,
     font-size: 2rem;
   }
 
+  .eddie-video-card {
+    max-width: 700px;
+  }
+
 }
