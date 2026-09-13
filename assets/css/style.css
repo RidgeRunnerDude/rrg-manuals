@@ -862,6 +862,25 @@ main {
   opacity: 0.95;
 }
 
+.warranty-section,
+.return-section,
+.order-issue-section,
+.printing-section,
+.liability-section,
+.copyright-section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.warranty-section .feature-card,
+.return-section .feature-card,
+.order-issue-section .feature-card,
+.printing-section .feature-card,
+.liability-section .feature-card,
+.copyright-section .feature-card {
+  margin-bottom: 20px;
+}
+
 /* ===============================
    PROTOTYPE / COMING SOON
 ================================ */
