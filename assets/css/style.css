@@ -834,6 +834,34 @@ main {
   margin-bottom: 32px;
 }
 
+/* Clickable product images */
+
+.best-uses-image-grid a,
+.compatibility-image-grid a,
+.featured-product-image a,
+.hero-spotlight-image a,
+.belt-clip-section a {
+  display: block;
+  cursor: zoom-in;
+}
+
+.best-uses-image-grid img,
+.compatibility-image-grid img,
+.featured-product-image img,
+.hero-spotlight-image img,
+.belt-clip-section img {
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.best-uses-image-grid a:hover img,
+.compatibility-image-grid a:hover img,
+.featured-product-image a:hover img,
+.hero-spotlight-image a:hover img,
+.belt-clip-section a:hover img {
+  transform: scale(1.03);
+  opacity: 0.95;
+}
+
 /* ===============================
    PROTOTYPE / COMING SOON
 ================================ */
